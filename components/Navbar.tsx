@@ -39,7 +39,7 @@ const joinus = [
   },
   {
     name: "Internships",
-    href: "/internships",
+    href: "/internship",
     icon: ArrowPathIcon,
   },
 ];
