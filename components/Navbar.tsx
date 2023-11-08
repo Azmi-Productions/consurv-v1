@@ -16,17 +16,17 @@ import Image from "next/image";
 const whatwedo = [
   {
     name: "Big Data",
-    href: "/big-data",
+    href: "/whatwedo/big-data",
     icon: ChartPieIcon,
   },
   {
-    name: "Digital Consultation",
-    href: "/digital-consultation",
+    name: "Digital Solutions",
+    href: "/whatwedo/digital-solutions",
     icon: CursorArrowRaysIcon,
   },
   {
     name: "System Integration",
-    href: "/system-integration",
+    href: "/whatwedo/system-integration",
     icon: SquaresPlusIcon,
   },
 ];
@@ -77,7 +77,7 @@ const Navbar = () => {
           WHO WE ARE
         </Link>
         <FlyoutMenu items={whatwedo} title="WHAT WE DO" mainlink="/whatwedo" />
-        <FlyoutMenu items={joinus} title="JOIN US" mainlink="join-us" />
+        <FlyoutMenu items={joinus} title="JOIN US" mainlink="/join-us" />
       </div>
     </nav>
   );
