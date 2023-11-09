@@ -4,17 +4,19 @@ import { Popover, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 export default function FlyoutMenu({
+  key,
   items,
   title,
   mainlink,
 }: {
+  key?: string;
   items: any[];
   title?: string;
   mainlink?: string;
 }) {
   return (
     <Popover className="relative">
-      <Popover.Button className="focus:outline-none inline-flex items-center gap-x-1 text-sm font-semibold leading-6 duration-200 transition-colors text-zinc-700 hover:text-cyan-500">
+      <Popover.Button className="focus:outline-none inline-flex items-center gap-x-1 text-sm font-semibold leading-6 duration-200 transition-colors text-white lg:text-zinc-700 hover:text-cyan-500">
         <Link href={mainlink as unknown as URL}>{title}</Link>
         <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
       </Popover.Button>

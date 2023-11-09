@@ -5,7 +5,7 @@ import { accordions } from "./accordions";
 
 const Page = () => {
   return (
-    <main className="py-32 px-40 bg-white">
+    <main className="py-32 px-10 md:px-24 lg:px-40 bg-white">
       <header className="flex flex-col items-center justify-center gap-10">
         <h1 className="text-zinc-800 text-5xl">System Integration</h1>
         <p className="text-gray-500 text-2xl text-center">
@@ -19,17 +19,13 @@ const Page = () => {
           src={RIGHTIMAGE}
           alt="Right Image"
           unoptimized
-          width={500}
-          height={500}
-          className="object-contain rounded-md"
+          className="object-contain rounded-md w-[150px] h-[150px] md:w-[500px] md:h-[500px]"
         />
         <Image
           src={LEFTIMAGE}
           alt="Left Image"
           unoptimized
-          width={500}
-          height={500}
-          className="object-contain rounded-md"
+          className="object-contain rounded-md w-[150px] h-[150px] md:w-[500px] md:h-[500px]"
         />
       </div>
 

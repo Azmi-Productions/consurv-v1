@@ -3,7 +3,7 @@ import { Fragment } from "react";
 
 const Page = () => {
   return (
-    <main className="py-32 px-40 bg-white">
+    <main className="py-32 px-10 md:px-24 lg:px-40 bg-white">
       {info.map((item) => (
         <Fragment key={item.title}>
           <div className="flex flex-col gap-y-3">

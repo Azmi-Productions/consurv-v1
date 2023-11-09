@@ -2,8 +2,8 @@ import { infos } from "./info";
 
 const Page = () => {
   return (
-    <main className="py-48 px-40 bg-white">
-      <header className="flex flex-row items-center justify-between gap-10 px-40 mb-24">
+    <main className="py-48 px-10 md:px-24 lg:px-40 bg-white">
+      <header className="flex flex-col md:flex-row items-center justify-between gap-10 lg:px-40 mb-24">
         <div className="flex flex-col items-center justify-center gap-5">
           <h1 className="text-zinc-800 text-xl">Internships</h1>
           <div className="flex flex-row items-center justify-center gap-2">
@@ -22,11 +22,11 @@ const Page = () => {
         </div>
       </header>
 
-      <div className="w-full flex flex-row items-center justify-center">
+      <div className="w-full flex flex-row flex-wrap items-center justify-center">
         {infos.map((info: any, index: number) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-between gap-10 px-40 mb-24 hover:shadow-2xl hover:-translate-y-2 transition-all duration-200"
+            className="w-1/3 flex flex-col items-center justify-between gap-10 px-40 mb-24 hover:shadow-2xl hover:-translate-y-2 transition-all duration-200"
           >
             <span className="text-white-500 bg-blue-500 rounded-full p-5">
               {info.icon}

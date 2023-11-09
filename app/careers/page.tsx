@@ -2,7 +2,7 @@ import { jobs } from "./jobs";
 
 const Page = () => {
   return (
-    <main className="py-32 px-40 bg-white">
+    <main className="py-32 px-10 md:px-24 lg:px-40 bg-white">
       <header className="flex flex-col items-center justify-center gap-10 px-40 mb-24">
         <h1 className="text-zinc-800 text-5xl">Career</h1>
 

@@ -4,7 +4,7 @@ import CTA from "@/public/Call_to_Actions1.jpg";
 
 const Page = () => {
   return (
-    <main className="py-32 px-40 bg-white">
+    <main className="py-32 px-10 md:px-24 lg:px-40 bg-white">
       <header className="flex items-center justify-center">
         <h1 className="text-zinc-800 text-5xl">Join Us</h1>
       </header>
@@ -26,19 +26,19 @@ const Page = () => {
         {feats.map((feat, index) => (
           <div
             key={index}
-            className="flex flex-row items-center justify-start gap-2 w-1/3 my-2"
+            className="flex flex-col md:flex-row items-center justify-start gap-2 w-1/3 my-2"
           >
             <div>{feat.logo}</div>
 
             <div className="flex flex-col">
               <h1 className={`${feat.color} font-bold`}>{feat.title}</h1>
-              <p className="text-zinc-800">{feat.desc}</p>
+              <p className="text-zinc-800 text-xs md:text-sm">{feat.desc}</p>
             </div>
           </div>
         ))}
       </div>
 
-      <div className="relative my-24 flex items-center justify-center drop-shadow-xl">
+      <div className="relative my-24 hidden md:flex items-center justify-center drop-shadow-xl">
         <Image
           src={CTA}
           alt="Call to Action"
@@ -55,7 +55,7 @@ const Page = () => {
               Farahin Jamalulail
             </p>
           </div>
-          <button className="p-3 bg-white rounded-full text-zinc-800">
+          <button className="p-1 md:p-3 bg-white rounded-full text-zinc-800">
             E-MAIL US
           </button>
         </div>

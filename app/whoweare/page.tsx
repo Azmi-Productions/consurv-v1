@@ -6,10 +6,10 @@ import { partners } from "./partners";
 
 const Page = () => {
   return (
-    <main className="py-32 px-40 bg-white">
+    <main className="py-32 px-10 md:px-24 lg:px-40 bg-white">
       <header className="flex flex-col items-center justify-center gap-10">
         <h1 className="text-zinc-800 text-5xl">About Us</h1>
-        <p className="text-zinc-500 font-bold text-lg">
+        <p className="text-zinc-500 font-bold text-xs md:text-lg">
           Consurv Technic (M) Sdn Bhd was incorporated in 2003. Over the years,
           Consurv has grown to be an established company, providing services and
           supplies to a multitude of industries with a special focus in Oil &
@@ -40,14 +40,14 @@ const Page = () => {
         {teams.map((team, index) => (
           <div
             key={index}
-            className="flex flex-row items-center justify-center"
+            className="flex flex-col md:flex-row items-center justify-center"
           >
             <div className="flex flex-col items-center justify-center w-[400px]">
               <Image
                 src={team.image}
                 alt={team.name}
                 unoptimized
-                className="rounded-full w-40 h-40 object-cover"
+                className="rounded-full w-32 lg:w-40 h-32 lg:h-40 object-cover"
               />
               <p className="text-zinc-800 text-2xl font-bold">{team.name}</p>
               <p className="text-zinc-500 text-xl font-bold text-center">
@@ -55,7 +55,9 @@ const Page = () => {
               </p>
             </div>
             <div className="flex flex-col gap-5 w-1/2">
-              <p className="text-zinc-800 text-start">{team.desc}</p>
+              <p className="text-zinc-800 text-start text-xs md:text-sm">
+                {team.desc}
+              </p>
               <Link
                 href={team.link as unknown as URL}
                 className="text-blue-700"
@@ -69,7 +71,7 @@ const Page = () => {
 
       <h2 className="text-zinc-800 text-5xl text-center my-24">Our Clients</h2>
 
-      <section className="flex flex-row items-center justify-center gap-28">
+      <section className="flex flex-row flex-wrap items-center justify-center gap-28">
         {clients.map((client, index) => (
           <Image
             key={index}
