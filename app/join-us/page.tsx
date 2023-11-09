@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { feats } from "./feats";
 import CTA from "@/public/Call_to_Actions1.jpg";
+import Link from "next/link";
 
 const Page = () => {
   return (
@@ -47,7 +48,7 @@ const Page = () => {
           height={1080}
           className="object-contain rounded-md"
         />
-        <div className="absolute flex flex-row items-center justify-between w-full p-10">
+        <div className="absolute flex flex-row items-center justify-between w-full p-24">
           <div className="flex flex-col gap-10">
             <h1 className="text-white text-3xl font-bold">Any inquiries?</h1>
             <p className="text-white ">
@@ -55,9 +56,12 @@ const Page = () => {
               Farahin Jamalulail
             </p>
           </div>
-          <button className="p-1 md:p-3 bg-white rounded-full text-zinc-800">
+          <Link
+            href="mailto:farahin@consurv.com.my"
+            className="py-1 px-3 md:py-5 md:px-7 hover:bg-gray-300 transition-colors duration-200 font-bold bg-white rounded-full text-zinc-800"
+          >
             E-MAIL US
-          </button>
+          </Link>
         </div>
       </div>
 

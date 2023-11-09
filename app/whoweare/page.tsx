@@ -61,6 +61,8 @@ const Page = () => {
               <Link
                 href={team.link as unknown as URL}
                 className="text-blue-700"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 LinkedIn
               </Link>

@@ -78,37 +78,25 @@ const Navbar = () => {
 
   return (
     <RevealWrapper
-      className={`fixed inset-x-0 top-0 z-50 invisible ${
-        blur && "backdrop-blur"
-      }`}
+      className={`fixed inset-x-0 top-0 z-50 invisible ${blur && "bg-white"}`}
       easing="ease-in-out"
       delay={100}
       duration={300}
       origin="top"
     >
       <nav
-        className="flex items-center justify-between lg:px-8 h-14 px-8"
+        className="flex items-center justify-between lg:px-60 h-14 px-8 py-16"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <Link
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              window.scrollTo({
-                top: 0,
-                behavior: "smooth",
-              });
-            }}
-            className="-m-2 p-1.5"
-          >
+          <Link href="/" className="-m-2 p-1.5">
             <span className="sr-only">Nadim Logo</span>
             <Image
               src={COMPANYLOGO}
               alt="i-Hax Logo"
               unoptimized
-              width={40}
-              height={40}
+              width={400}
+              height={400}
               className="object-contain drop-shadow-lg"
             />
           </Link>
@@ -130,12 +118,51 @@ const Navbar = () => {
           >
             WHO WE ARE
           </Link>
-          <FlyoutMenu
+          <div className="relative group">
+            <Link
+              href="/whatwedo"
+              className="text-zinc-700 hover:text-cyan-500 font-bold text-sm duration-200 transition-colors"
+            >
+              WHAT WE DO
+            </Link>
+            <div className="absolute hidden group-hover:flex flex-col gap-5 p-10 bg-white rounded-md shadow-md">
+              {whatwedo.map((link, index) => (
+                <Link
+                  key={index}
+                  href={link.href}
+                  className="text-zinc-700 hover:text-cyan-500 font-bold text-sm duration-200 transition-colors"
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+          <div className="relative group">
+            <Link
+              href="/join-us"
+              className="text-zinc-700 hover:text-cyan-500 font-bold text-sm duration-200 transition-colors"
+            >
+              JOIN US
+            </Link>
+            <div className="absolute hidden group-hover:flex flex-col gap-5 p-10 bg-white rounded-md shadow-md">
+              {joinus.map((link, index) => (
+                <Link
+                  key={index}
+                  href={link.href}
+                  className="text-zinc-700 hover:text-cyan-500 font-bold text-sm duration-200 transition-colors"
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* <FlyoutMenu
             items={whatwedo}
             title="WHAT WE DO"
             mainlink="/whatwedo"
           />
-          <FlyoutMenu items={joinus} title="JOIN US" mainlink="/join-us" />
+          <FlyoutMenu items={joinus} title="JOIN US" mainlink="/join-us" /> */}
         </div>
       </nav>
       <Dialog
