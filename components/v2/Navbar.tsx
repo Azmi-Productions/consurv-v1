@@ -10,34 +10,6 @@ import { AiOutlineClose as XMarkIcon } from "react-icons/ai";
 import { FaBars as Bars3Icon } from "react-icons/fa";
 import FlyoutMenu from "../FlyoutMenu";
 
-const navigation = [
-  { name: "About", href: "#about" },
-  {
-    name: "Values",
-    href: "#values",
-  },
-  {
-    name: "Creed",
-    href: "#creed",
-  },
-  {
-    name: "Song",
-    href: "#song",
-  },
-  {
-    name: "Gallery",
-    href: "#gallery",
-  },
-  {
-    name: "Activities",
-    href: "#activities",
-  },
-  {
-    name: "Academic",
-    href: "#academic",
-  },
-];
-
 const whatwedo = [
   {
     name: "Big Data",
@@ -80,7 +52,7 @@ const Navbar = () => {
     <RevealWrapper
       className={`fixed inset-x-0 top-0 z-50 invisible ${blur && "bg-white"}`}
       easing="ease-in-out"
-      delay={100}
+      delay={0}
       duration={300}
       origin="top"
     >
@@ -95,9 +67,10 @@ const Navbar = () => {
               src={COMPANYLOGO}
               alt="i-Hax Logo"
               unoptimized
-              width={400}
-              height={400}
-              className="object-contain drop-shadow-lg"
+              width={0}
+              height={0}
+              sizes="100%"
+              className="object-contain drop-shadow-lg w-[200px] h-[200px] md:w-[400px] md:h-[400px]"
             />
           </Link>
         </div>
@@ -108,20 +81,24 @@ const Navbar = () => {
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-6 w-6 text-zinc-800" aria-hidden="true" />
+            <Bars3Icon className="h-6 w-6 text-zinc-500" aria-hidden="true" />
           </button>
         </div>
         <div className="hidden lg:flex items-center justify-center gap-10">
           <Link
             href="/whoweare"
-            className="text-zinc-700 hover:text-cyan-500 font-bold text-sm duration-200 transition-colors"
+            className={`${
+              blur ? "text-zinc-700" : "text-zinc-100"
+            } hover:text-cyan-500 font-bold text-sm duration-200 transition-colors`}
           >
             WHO WE ARE
           </Link>
           <div className="relative group">
             <Link
               href="/whatwedo"
-              className="text-zinc-700 hover:text-cyan-500 font-bold text-sm duration-200 transition-colors"
+              className={`${
+                blur ? "text-zinc-700" : "text-zinc-100"
+              } hover:text-cyan-500 font-bold text-sm duration-200 transition-colors`}
             >
               WHAT WE DO
             </Link>
@@ -140,7 +117,9 @@ const Navbar = () => {
           <div className="relative group">
             <Link
               href="/join-us"
-              className="text-zinc-700 hover:text-cyan-500 font-bold text-sm duration-200 transition-colors"
+              className={`${
+                blur ? "text-zinc-700" : "text-zinc-100"
+              } hover:text-cyan-500 font-bold text-sm duration-200 transition-colors`}
             >
               JOIN US
             </Link>
