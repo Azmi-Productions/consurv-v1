@@ -26,7 +26,7 @@ const Page = () => {
         {infos.map((info: any, index: number) => (
           <div
             key={index}
-            className="w-full lg:w-1/3 flex flex-col items-center justify-between gap-10 xl:px-40 mb-24 hover:shadow-2xl hover:-translate-y-2 transition-all duration-200"
+            className="w-full lg:w-1/3 flex flex-col items-center justify-between gap-10 p-0 px-10 mb-24 hover:shadow-2xl hover:-translate-y-2 transition-all duration-200"
           >
             <span className="text-white-500 bg-blue-500 rounded-full p-5">
               {info.icon}
