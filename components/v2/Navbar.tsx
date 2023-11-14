@@ -3,7 +3,14 @@
 import Image from "next/image";
 import COMPANYLOGO from "@/public/ct-logo-1.png";
 import { useState, useEffect } from "react";
-import Link from "next/link";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  Link,
+  Button,
+} from "@nextui-org/react";
 import { RevealWrapper } from "next-reveal";
 import { Dialog } from "@headlessui/react";
 import { AiOutlineClose as XMarkIcon } from "react-icons/ai";
@@ -36,7 +43,7 @@ const joinus = [
   },
 ];
 
-const Navbar = () => {
+const NavigationBar = () => {
   const [blur, handleBlur] = useState<boolean>(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -49,19 +56,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <RevealWrapper
-      className={`fixed inset-x-0 top-0 z-50 invisible ${blur && "bg-white"}`}
-      easing="ease-in-out"
-      delay={0}
-      duration={300}
-      origin="top"
-    >
-      <nav
-        className="flex items-center justify-between lg:px-60 h-14 px-8 py-16"
-        aria-label="Global"
-      >
-        <div className="flex lg:flex-1">
-          <Link href="/" className="-m-2 p-1.5">
+    <>
+      <Navbar shouldHideOnScroll className="bg-white py-5 fixed z-50">
+        <NavbarBrand>
+          <Link href="/" className=" p-1.5">
             <span className="sr-only">Nadim Logo</span>
             <Image
               src={COMPANYLOGO}
@@ -70,35 +68,24 @@ const Navbar = () => {
               width={0}
               height={0}
               sizes="100%"
-              className="object-contain drop-shadow-lg w-[200px] h-[200px] md:w-[400px] md:h-[400px]"
+              className="object-contain drop-shadow-lg w-[200px] h-[200px] md:w-[300px] md:h-[300px]"
             />
           </Link>
-        </div>
-        <div className="flex lg:hidden">
-          <button
-            type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-            onClick={() => setMobileMenuOpen(true)}
-          >
-            <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-6 w-6 text-zinc-500" aria-hidden="true" />
-          </button>
-        </div>
-        <div className="hidden lg:flex items-center justify-center gap-10">
-          <Link
-            href="/whoweare"
-            className={`${
-              blur ? "text-zinc-700" : "text-zinc-100"
-            } hover:text-cyan-500 font-bold text-sm duration-200 transition-colors`}
-          >
-            WHO WE ARE
-          </Link>
-          <div className="relative group">
+        </NavbarBrand>
+
+        <NavbarContent justify="end">
+          <NavbarItem className="hidden lg:flex">
+            <Link
+              href="/whoweare"
+              className="text-zinc-700 hover:text-cyan-500 font-bold text-sm duration-200 transition-colors"
+            >
+              WHO WE ARE
+            </Link>
+          </NavbarItem>
+          <NavbarItem className="relative group">
             <Link
               href="/whatwedo"
-              className={`${
-                blur ? "text-zinc-700" : "text-zinc-100"
-              } hover:text-cyan-500 font-bold text-sm duration-200 transition-colors`}
+              className="text-zinc-700 hover:text-cyan-500 font-bold text-sm duration-200 transition-colors"
             >
               WHAT WE DO
             </Link>
@@ -113,13 +100,11 @@ const Navbar = () => {
                 </Link>
               ))}
             </div>
-          </div>
-          <div className="relative group">
+          </NavbarItem>
+          <NavbarItem className="relative group">
             <Link
               href="/join-us"
-              className={`${
-                blur ? "text-zinc-700" : "text-zinc-100"
-              } hover:text-cyan-500 font-bold text-sm duration-200 transition-colors`}
+              className="text-zinc-700 hover:text-cyan-500 font-bold text-sm duration-200 transition-colors"
             >
               JOIN US
             </Link>
@@ -134,16 +119,9 @@ const Navbar = () => {
                 </Link>
               ))}
             </div>
-          </div>
-
-          {/* <FlyoutMenu
-            items={whatwedo}
-            title="WHAT WE DO"
-            mainlink="/whatwedo"
-          />
-          <FlyoutMenu items={joinus} title="JOIN US" mainlink="/join-us" /> */}
-        </div>
-      </nav>
+          </NavbarItem>
+        </NavbarContent>
+      </Navbar>
       <Dialog
         as="div"
         className="lg:hidden"
@@ -189,8 +167,8 @@ const Navbar = () => {
           </div>
         </Dialog.Panel>
       </Dialog>
-    </RevealWrapper>
+    </>
   );
 };
 
-export default Navbar;
+export default NavigationBar;

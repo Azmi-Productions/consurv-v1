@@ -22,11 +22,11 @@ const Page = () => {
         </div>
       </header>
 
-      <div className="w-full flex flex-row flex-wrap items-center justify-center">
+      <div className="w-full flex flex-col lg:flex-row flex-wrap items-center justify-center">
         {infos.map((info: any, index: number) => (
           <div
             key={index}
-            className="w-1/3 flex flex-col items-center justify-between gap-10 px-40 mb-24 hover:shadow-2xl hover:-translate-y-2 transition-all duration-200"
+            className="w-full lg:w-1/3 flex flex-col items-center justify-between gap-10 xl:px-40 mb-24 hover:shadow-2xl hover:-translate-y-2 transition-all duration-200"
           >
             <span className="text-white-500 bg-blue-500 rounded-full p-5">
               {info.icon}

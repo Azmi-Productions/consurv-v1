@@ -6,6 +6,7 @@ import { RevealList } from "next-reveal";
 import IMAGE1 from "@/public/hero/wp9314293.jpg";
 import IMAGE2 from "@/public/hero/images.jpeg";
 import IMAGE3 from "@/public/hero/wp9314293 (1).jpg";
+import { Card, CardBody, CardFooter } from "@nextui-org/react";
 
 const services = [
   {
@@ -37,7 +38,7 @@ export default function Home() {
           origin="right"
           className="w-full h-full absolute bg-zinc-900/90 z-10 flex flex-col items-center justify-center"
         >
-          <h1 className="text-zinc-100 text-3xl sm:text-8xl font-bold invisible drop-shadow-md">
+          <h1 className="text-zinc-100 text-3xl sm:text-8xl text-center font-bold invisible drop-shadow-md">
             CONSURV TECHNIC
           </h1>
           <p className="text-zinc-300 text-sm sm:text-xl invisible drop-shadow-md">
@@ -58,7 +59,7 @@ export default function Home() {
       </section>
 
       <section className="w-full h-fit bg-white flex flex-col items-center justify-center py-24">
-        <header className="flex flex-col items-center justify-center drop-shadow-md">
+        <header className="flex flex-col items-center justify-center drop-shadow-md px-10">
           <h1 className="text-zinc-800 text-2xl sm:text-5xl font-bold">
             OUR SERVICES
           </h1>
@@ -71,7 +72,7 @@ export default function Home() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-start w-full sm:w-[20%] my-4 bg-zinc-100 rounded-md shadow-md"
+              className="flex flex-col items-center justify-start w-full sm:w-1/2 xl:w-[20%] my-4 bg-zinc-100 rounded-md shadow-md"
             >
               <Image
                 src={service.image}
@@ -82,7 +83,7 @@ export default function Home() {
                 alt={service.name}
                 className="object-cover rounded-md w-full h-1/2"
               />
-              <div className="flex flex-col items-center justify-center w-full p-6">
+              <div className="flex flex-col items-center justify-center h-1/2 w-full p-6">
                 <h1 className="text-zinc-800 text-2xl font-bold">
                   {service.name}
                 </h1>
@@ -105,7 +106,7 @@ export default function Home() {
           </p>
         </header>
 
-        <div className="flex flex-col gap-y-10 sm:flex-row w-full py-24">
+        <div className="flex flex-col gap-y-10 lg:flex-row w-full py-24">
           <div className="flex-1 flex flex-col gap-10 items-center justify-center w-full">
             <div className="flex flex-col gap-2">
               <label htmlFor="name" className="text-zinc-800">
