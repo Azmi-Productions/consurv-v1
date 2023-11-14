@@ -57,7 +57,10 @@ const NavigationBar = () => {
 
   return (
     <>
-      <Navbar shouldHideOnScroll className="bg-white py-5 fixed z-50">
+      <Navbar
+        shouldHideOnScroll
+        className="bg-white py-5 fixed inset-x-0 top-0 z-50"
+      >
         <NavbarBrand>
           <Link href="/" className=" p-1.5">
             <span className="sr-only">Nadim Logo</span>
@@ -68,13 +71,24 @@ const NavigationBar = () => {
               width={0}
               height={0}
               sizes="100%"
-              className="object-contain drop-shadow-lg w-[200px] h-[200px] md:w-[300px] md:h-[300px]"
+              className="object-contain drop-shadow-lg w-[100px] h-[100px] md:w-[300px] md:h-[300px]"
             />
           </Link>
         </NavbarBrand>
 
-        <NavbarContent justify="end">
-          <NavbarItem className="hidden lg:flex">
+        <NavbarContent className="flex lg:hidden absolute right-0">
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            onClick={() => setMobileMenuOpen(true)}
+          >
+            <span className="sr-only">Open main menu</span>
+            <Bars3Icon className="h-6 w-6 text-zinc-700" aria-hidden="true" />
+          </button>
+        </NavbarContent>
+
+        <NavbarContent justify="end" className="hidden lg:flex">
+          <NavbarItem>
             <Link
               href="/whoweare"
               className="text-zinc-700 hover:text-cyan-500 font-bold text-sm duration-200 transition-colors"
@@ -137,10 +151,7 @@ const NavigationBar = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
-              <XMarkIcon
-                className="h-6 w-6 text-slate-100"
-                aria-hidden="true"
-              />
+              <XMarkIcon className="h-6 w-6 text-zinc-700" aria-hidden="true" />
             </button>
           </div>
           <div className="mt-6 flow-root">
@@ -149,6 +160,7 @@ const NavigationBar = () => {
                 <Link
                   href="/whoweare"
                   className="text-white hover:text-cyan-500 font-bold text-sm duration-200 transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   WHO WE ARE
                 </Link>
@@ -156,11 +168,13 @@ const NavigationBar = () => {
                   items={whatwedo}
                   title="WHAT WE DO"
                   mainlink="/whatwedo"
+                  onClick={() => setMobileMenuOpen(false)}
                 />
                 <FlyoutMenu
                   items={joinus}
                   title="JOIN US"
                   mainlink="/join-us"
+                  onClick={() => setMobileMenuOpen(false)}
                 />
               </div>
             </div>

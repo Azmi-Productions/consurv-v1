@@ -8,16 +8,20 @@ export default function FlyoutMenu({
   items,
   title,
   mainlink,
+  onClick,
 }: {
   key?: string;
   items: any[];
   title?: string;
   mainlink?: string;
+  onClick?: () => void;
 }) {
   return (
     <Popover className="relative">
       <Popover.Button className="focus:outline-none inline-flex items-center gap-x-1 text-sm font-semibold leading-6 duration-200 transition-colors text-white lg:text-zinc-700 hover:text-cyan-500">
-        <Link href={mainlink as unknown as URL}>{title}</Link>
+        <Link href={mainlink as unknown as URL} onClick={onClick}>
+          {title}
+        </Link>
         <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
       </Popover.Button>
 
@@ -42,6 +46,7 @@ export default function FlyoutMenu({
                     <Link
                       href={item.href}
                       className="font-semibold text-zinc-700 hover:text-cyan-500 duration-200 transition-colors"
+                      onClick={onClick}
                     >
                       {item.name}
                       <span className="absolute inset-0" />
