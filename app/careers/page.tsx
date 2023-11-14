@@ -52,9 +52,7 @@ const Page = () => {
 
             {job.skills && (
               <>
-                <h2 className="text-zinc-800 text-xl font-bold">
-                  Requirements
-                </h2>
+                <h2 className="text-zinc-800 text-xl font-bold">Skills</h2>
                 <ul>
                   {job.skills.map((skill, index) => (
                     <li key={index} className="text-zinc-800">
@@ -68,7 +66,7 @@ const Page = () => {
             {job.responsibilities && (
               <>
                 <h2 className="text-zinc-800 text-xl font-bold">
-                  Requirements
+                  Responsibilities
                 </h2>
                 <ul>
                   {job.responsibilities.map((res, index) => (
@@ -83,7 +81,7 @@ const Page = () => {
             {job.qualifications && (
               <>
                 <h2 className="text-zinc-800 text-xl font-bold">
-                  Requirements
+                  Qualification
                 </h2>
                 <ul>
                   {job.qualifications.map((qual, index) => (
