@@ -4,9 +4,9 @@ import Image from "next/image";
 import MAINIMAGE from "@/public/what-we-do.jpg";
 import { RevealList } from "next-reveal";
 import Lottie from "react-lottie";
-import animationData1 from "@/public/gif/Animation - 1700018502876.json";
-import animationData2 from "@/public/gif/Animation - 1700018604752.json";
-import animationData3 from "@/public/gif/Animation - 1700018899897.json";
+import animationData1 from "./lottie/Animation - 1700018502876.json";
+import animationData2 from "./lottie/Animation - 1700018604752.json";
+import animationData3 from "./lottie/Animation - 1700018899897.json";
 
 const services = [
   {
