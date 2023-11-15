@@ -3,38 +3,29 @@
 import Image from "next/image";
 import MAINIMAGE from "@/public/what-we-do.jpg";
 import { RevealList } from "next-reveal";
-import Lottie from "react-lottie";
-import animationData1 from "./lottie/Animation - 1700018502876.json";
-import animationData2 from "./lottie/Animation - 1700018604752.json";
-import animationData3 from "./lottie/Animation - 1700018899897.json";
+import IMAGE1 from "@/public/lottie/Animation - 1700018502876.gif";
+import IMAGE2 from "@/public/lottie/Animation - 1700018604752.gif";
+import IMAGE3 from "@/public/lottie/Animation - 1700018899897.gif";
 
 const services = [
   {
-    image: animationData1,
+    image: IMAGE1,
     name: "Big Data",
     desc: "Consurv Technic has been involved in petabytes worth of data extraction and mining from plant facilities over the last few years. Our experiences include projects with Shell and PETRONAS (RAPID).",
   },
   {
-    image: animationData2,
+    image: IMAGE2,
     name: "Digital Solutions",
     desc: "Many times, our clients share their problem statements with us. Whether it is as simple as creating (front end) reporting dashboards or as complex as optimizing the operations and production of a refinery. You name it, we solve it.",
   },
   {
-    image: animationData3,
+    image: IMAGE3,
     name: "System Integration",
     desc: "Integration of multiple systems is key to operating facilities and companies efficiently. It also ensures that maximum effectiveness is achieved. We have installed, commissioned and also integrated multiple systems for Oil & Gas and utility clients. Consurv is also certified SI for OSIsoft.",
   },
 ];
 
 export default function Home() {
-  // const defaultOptions = {
-  //   loop: true,
-  //   autoplay: true,
-  //   animationData: animationData,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice",
-  //   },
-  // };
   return (
     <main className="relative flex max-w-screen min-h-screen overflow-x-hidden flex-col items-center justify-center">
       <section className="relative flex flex-col items-center justify-center w-full bg-red-500">
@@ -82,26 +73,15 @@ export default function Home() {
               key={index}
               className="flex flex-col items-center justify-start w-full sm:w-1/2 xl:w-[20%] my-4 bg-zinc-100 rounded-md shadow-md"
             >
-              {/* <Image
+              <Image
                 src={service.image}
                 width={0}
                 height={0}
                 sizes="100%"
                 alt={service.name}
                 className="object-cover rounded-md w-full h-1/2"
-              /> */}
-              <div className="w-full h-1/2 overflow-hidden">
-                <Lottie
-                  options={{
-                    loop: true,
-                    autoplay: true,
-                    animationData: service.image,
-                    rendererSettings: {
-                      preserveAspectRatio: "xMidYMid slice",
-                    },
-                  }}
-                />
-              </div>
+              />
+
               <div className="flex flex-col items-center justify-start h-1/2 w-full p-6">
                 <h1 className="text-zinc-800 text-2xl font-bold">
                   {service.name}
