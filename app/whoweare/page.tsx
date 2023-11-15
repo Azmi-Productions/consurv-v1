@@ -32,7 +32,7 @@ const Page = () => {
         </p>
       </header>
 
-      <h2 className="text-zinc-800 text-5xl text-center my-24">
+      <h2 className="text-zinc-800 font-bold text-5xl text-center my-24">
         Connect with Our Team
       </h2>
 
@@ -71,7 +71,9 @@ const Page = () => {
         ))}
       </section>
 
-      <h2 className="text-zinc-800 text-5xl text-center my-24">Our Clients</h2>
+      <h2 className="text-zinc-800 font-bold text-5xl text-center my-24">
+        Our Clients
+      </h2>
 
       <section className="flex flex-row flex-wrap items-center justify-center gap-28">
         {clients.map((client, index) => (
@@ -85,9 +87,11 @@ const Page = () => {
         ))}
       </section>
 
-      <h2 className="text-zinc-800 text-5xl text-center my-24">Our Partners</h2>
+      <h2 className="text-zinc-800 font-bold text-5xl text-center my-24">
+        Our Partners
+      </h2>
 
-      <section className="flex flex-row  gap-10 flex-wrap">
+      <section className="flex flex-row items-center justify-center gap-10 flex-wrap">
         {partners.map((partner, index) => (
           <Image
             key={index}

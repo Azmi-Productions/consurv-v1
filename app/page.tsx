@@ -6,7 +6,6 @@ import { RevealList } from "next-reveal";
 import IMAGE1 from "@/public/hero/wp9314293.jpg";
 import IMAGE2 from "@/public/hero/images.jpeg";
 import IMAGE3 from "@/public/hero/wp9314293 (1).jpg";
-import { Card, CardBody, CardFooter } from "@nextui-org/react";
 
 const services = [
   {
@@ -48,7 +47,7 @@ export default function Home() {
         <div className="overflow-hidden w-full h-screen">
           <Image
             src={MAINIMAGE}
-            unoptimized
+            priority
             width={0}
             height={0}
             sizes="100vw"
@@ -76,7 +75,6 @@ export default function Home() {
             >
               <Image
                 src={service.image}
-                unoptimized
                 width={0}
                 height={0}
                 sizes="100%"

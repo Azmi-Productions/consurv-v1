@@ -4,7 +4,7 @@ import "./globals.css";
 import NavigationBar from "@/components/v2/Navbar";
 import NextProvider from "@/context/NextUIProvider";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   title: "CONSURV TECHNIC",

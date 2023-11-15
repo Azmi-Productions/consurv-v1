@@ -126,14 +126,6 @@ const Navbar = () => {
                     href={item.href}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-100 hover:text-orange-300"
                     onClick={(e) => {
-                      e.preventDefault();
-                      const element = document.getElementById(
-                        item.href.slice(1)
-                      ); // Assuming item.href is a hash link (#example)
-                      if (element) {
-                        element.scrollIntoView({ behavior: "smooth" }); // You can customize scroll behavior here
-                      }
-
                       setMobileMenuOpen(false);
                     }}
                   >

@@ -1,4 +1,5 @@
 import { infos } from "./info";
+import Link from "next/link";
 
 const Page = () => {
   return (
@@ -26,7 +27,7 @@ const Page = () => {
         {infos.map((info: any, index: number) => (
           <div
             key={index}
-            className="w-full lg:w-1/3 flex flex-col items-center justify-between gap-10 p-0 px-10 mb-24 hover:shadow-2xl hover:-translate-y-2 transition-all duration-200"
+            className="w-full group hover:border hover:border-solid hover:border-blue-500 lg:w-1/3 flex flex-col items-center justify-between gap-10 p-0 px-10 mb-24 hover:shadow-2xl hover:-translate-y-2 transition-all duration-200"
           >
             <span className="text-white-500 bg-blue-500 rounded-full p-5">
               {info.icon}
@@ -35,6 +36,15 @@ const Page = () => {
             <div className="flex flex-col items-center justify-center gap-5 text-center">
               <h1 className="text-zinc-800 text-3xl">{info.title}</h1>
               <p className="text-zinc-800">{info.desc}</p>
+            </div>
+
+            <div className="pb-10">
+              <Link
+                href={info.link}
+                className="text-blue-500 underline text-xs opacity-0 group-hover:opacity-100 transition-opacity"
+              >
+                Read More
+              </Link>
             </div>
           </div>
         ))}
