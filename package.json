@@ -12,7 +12,6 @@
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
     "@nextui-org/react": "^2.2.9",
-    "@types/react-lottie": "^1.2.9",
     "framer-motion": "^10.16.4",
     "next": "14.0.1",
     "next-reveal": "^1.0.6",
@@ -23,14 +22,15 @@
     "sharp": "^0.32.6"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-lottie": "^1.2.9",
     "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.1",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.1"
+    "typescript": "^5"
   }
 }
