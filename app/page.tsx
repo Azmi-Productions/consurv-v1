@@ -3,9 +3,6 @@
 import Image from "next/image";
 import MAINIMAGE from "@/public/what-we-do.jpg";
 import { RevealList } from "next-reveal";
-import IMAGE1 from "@/public/hero/wp9314293.jpg";
-import IMAGE2 from "@/public/hero/images.jpeg";
-import IMAGE3 from "@/public/hero/wp9314293 (1).jpg";
 import Lottie from "react-lottie";
 import animationData1 from "@/public/gif/Animation - 1700018502876.json";
 import animationData2 from "@/public/gif/Animation - 1700018604752.json";
