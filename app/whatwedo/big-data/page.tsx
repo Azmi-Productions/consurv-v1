@@ -36,7 +36,7 @@ const Page = () => {
         </p>
       </header>
 
-      <div className="flex flex-row items-center justify-center mt-24">
+      <div className="flex flex-row items-center justify-center">
         <Image
           src={RIGHTIMAGE}
           alt="Right Image"
@@ -51,7 +51,7 @@ const Page = () => {
         />
       </div>
 
-      <div className="flex items-center justify-center mt-24 text-lg px-10">
+      <div className="flex items-center justify-center text-lg px-10">
         <p className="text-zinc-800">
           Consurv Technic has been involved in petabytes worth of data
           extraction and mining from plant facilities over the last few years.

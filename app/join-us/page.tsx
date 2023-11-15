@@ -48,20 +48,24 @@ const Page = () => {
           height={1080}
           className="object-contain rounded-md"
         />
-        <div className="absolute flex flex-row items-center justify-between w-full p-24">
-          <div className="flex flex-col gap-10">
-            <h1 className="text-white text-3xl font-bold">Any inquiries?</h1>
-            <p className="text-white ">
+        <div className="absolute flex flex-row items-center justify-between w-full p-10">
+          <div className="flex-1 flex flex-col gap-2">
+            <h1 className="text-white text-xl lg:text-3xl font-bold">
+              Any inquiries?
+            </h1>
+            <p className="text-white text-sm">
               Please drop your e-mail to our Corporate Affairs Executive, Nur
               Farahin Jamalulail
             </p>
           </div>
-          <Link
-            href="mailto:farahin@consurv.com.my"
-            className="py-1 px-3 md:py-5 md:px-7 hover:bg-gray-300 transition-colors duration-200 font-bold bg-white rounded-full text-zinc-800"
-          >
-            E-MAIL US
-          </Link>
+          <div className="flex-1 flex items-center justify-end">
+            <Link
+              href="mailto:farahin@consurv.com.my"
+              className="w-fit text-xs lg:text-lg py-1 px-3 md:py-5 md:px-7 hover:bg-gray-300 transition-colors duration-200 font-bold bg-white rounded-full text-zinc-800"
+            >
+              E-MAIL US
+            </Link>
+          </div>
         </div>
       </div>
 

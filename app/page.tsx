@@ -83,7 +83,7 @@ export default function Home() {
                 alt={service.name}
                 className="object-cover rounded-md w-full h-1/2"
               />
-              <div className="flex flex-col items-center justify-center h-1/2 w-full p-6">
+              <div className="flex flex-col items-center justify-start h-1/2 w-full p-6">
                 <h1 className="text-zinc-800 text-2xl font-bold">
                   {service.name}
                 </h1>
