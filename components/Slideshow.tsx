@@ -1,9 +1,13 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
+import Image from "next/image";
 import IMAGE1 from "@/public/what-we-do.jpg";
 import IMAGE2 from "@/public/hero/4fa6666d-8723-46bd-a901-0a851efaccc9.jpeg";
 import IMAGE3 from "@/public/hero/319359bc-76c4-455c-ad1e-36fbe6074f1e.jpeg";
+
+const images = [IMAGE1, IMAGE2, IMAGE3];
+const delay = 2500;
 
 const Slideshow = () => {
   const [index, setIndex] = useState(0);
@@ -18,31 +22,33 @@ const Slideshow = () => {
   useEffect(() => {
     resetTimeout();
     //@ts-ignore
-    timeoutRef.current = setTimeout(
-      () => setIndex((prevIndex) => prevIndex + 1),
-      5000
-    );
+    timeoutRef.current = setTimeout(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, delay);
 
     return () => {
       resetTimeout();
     };
   }, [index]);
 
-  const images = [IMAGE1, IMAGE2, IMAGE3];
-
   return (
-    <div className="relative w-full h-screen">
-      <div className="absolute w-full h-full">
-        <div className="w-full h-full bg-center bg-cover bg-no-repeat animate-fade-in">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={images[index % images.length].src}
+    <div className="m-0 overflow-hidden w-full">
+      <div
+        className="whitespace-nowrap transition-all duration-500 ease-in-out w-screen h-screen"
+        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+      >
+        {images.map((item, index) => (
+          <Image
+            key={index}
+            src={item}
             alt="Hero"
-            className="w-full h-full object-cover"
+            width={0}
+            height={0}
+            sizes="100%"
+            className="w-full h-full object-cover inline-block"
           />
-        </div>
+        ))}
       </div>
-      <div className="absolute w-full h-full bg-black/50"></div>
     </div>
   );
 };
