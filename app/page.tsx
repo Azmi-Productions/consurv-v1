@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import MAINIMAGE from "@/public/what-we-do.jpg";
-import { RevealList } from "next-reveal";
+import { useState } from "react";
 import IMAGE1 from "@/public/lottie/Animation - 1700018502876.gif";
 import IMAGE2 from "@/public/lottie/Animation - 1700018604752.gif";
 import IMAGE3 from "@/public/lottie/Animation - 1700018899897.gif";
@@ -29,21 +29,6 @@ export default function Home() {
   return (
     <main className="relative flex max-w-screen min-h-screen overflow-x-hidden flex-col items-center justify-center">
       <section className="relative flex flex-col items-center justify-center w-full bg-red-500">
-        <RevealList
-          reset={true}
-          easing="ease-in-out"
-          delay={50}
-          interval={200}
-          origin="right"
-          className="w-full h-full absolute bg-zinc-900/90 z-10 flex flex-col items-center justify-center"
-        >
-          <h1 className="text-zinc-100 text-3xl sm:text-8xl text-center font-bold invisible drop-shadow-md">
-            CONSURV TECHNIC
-          </h1>
-          <p className="text-zinc-300 text-sm sm:text-xl invisible drop-shadow-md">
-            Transform your ideas into solutions
-          </p>
-        </RevealList>
         <div className="overflow-hidden w-full h-screen">
           <Image
             src={MAINIMAGE}
