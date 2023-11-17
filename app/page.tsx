@@ -6,6 +6,7 @@ import { useState } from "react";
 import IMAGE1 from "@/public/lottie/Animation - 1700018502876.gif";
 import IMAGE2 from "@/public/lottie/Animation - 1700018604752.gif";
 import IMAGE3 from "@/public/lottie/Animation - 1700018899897.gif";
+import Slideshow from "@/components/Slideshow";
 
 const services = [
   {
@@ -29,7 +30,7 @@ export default function Home() {
   return (
     <main className="relative flex max-w-screen min-h-screen overflow-x-hidden flex-col items-center justify-center">
       <section className="relative flex flex-col items-center justify-center w-full bg-red-500">
-        <div className="overflow-hidden w-full h-screen">
+        {/* <div className="overflow-hidden w-full h-screen">
           <Image
             src={MAINIMAGE}
             priority
@@ -39,7 +40,8 @@ export default function Home() {
             alt="What we do"
             className="object-cover w-full h-full bg-center"
           />
-        </div>
+        </div> */}
+        <Slideshow />
       </section>
 
       <section className="w-full h-fit bg-white flex flex-col items-center justify-center py-24">
