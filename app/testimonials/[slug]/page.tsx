@@ -24,7 +24,25 @@ const Page = ({ params }: { params: { slug: string } }) => {
           height={500}
           className=" object-contain"
         />
-        <h1 className="text-zinc-800 text-5xl font-bold">{data.name}</h1>
+        <h1 className="text-zinc-800 text-5xl font-bold text-center">
+          {data.name}
+        </h1>
+        <div>
+          <h1 className="text-zinc-800 text-sm md:text-2xl">
+            <span className="text-lg md:text-3xl font-bold">University: </span>
+            {data.university}
+          </h1>
+          <h1 className="text-zinc-800 text-sm md:text-2xl">
+            {" "}
+            <span className="text-lg md:text-3xl font-bold">Course: </span>
+            {data.course}
+          </h1>
+          <h1 className="text-zinc-800 text-sm md:text-2xl">
+            {" "}
+            <span className="text-lg md:text-3xl font-bold">Internship: </span>
+            {data.intern}
+          </h1>
+        </div>
       </header>
 
       <section className="px-10">

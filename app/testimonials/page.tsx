@@ -32,7 +32,7 @@ const Page = () => {
             return (
               <RevealWrapper
                 key={index}
-                delay={index * 500}
+                delay={index * 200}
                 origin="right"
                 duration={500}
                 className="flex relative flex-col items-center justify-center h-full w-full invisible cursor-pointer group"
