@@ -27,7 +27,7 @@ const Page = () => {
         {feats.map((feat, index) => (
           <div
             key={index}
-            className="flex flex-col md:flex-row items-center justify-start gap-2 w-1/3 my-2"
+            className="flex flex-col md:flex-row items-center justify-start text-center md:text-start gap-2 w-1/2 lg:w-1/3 my-2 px-5"
           >
             <div>{feat.logo}</div>
 

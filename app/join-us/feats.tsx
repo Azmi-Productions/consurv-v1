@@ -14,7 +14,7 @@ export const feats = [
   },
   {
     title: "Company Trips",
-    desc: "All expenses paid and all you have to do is just be there, have fun and enjoy all the moments withh us.",
+    desc: "All expenses paid and all you have to do is just be there, have fun and enjoy all the moments with us.",
     logo: (
       <BiSolidPlaneAlt className="text-purple-500 hover:text-white hover:bg-purple-500 w-16 h-16 border-2 border-solid border-purple-500 p-2 rounded-full" />
     ),
@@ -30,7 +30,7 @@ export const feats = [
   },
   {
     title: "Fun & Engaging Workplace",
-    desc: "Karaoke? Games? Soirts? We work hard and play hard!",
+    desc: "Karaoke? Games? Sports? We work hard and play hard!",
     logo: (
       <BsFillMicFill className="text-green-500 hover:text-white hover:bg-green-500 w-16 h-16 border-2 border-solid border-green-500 p-2 rounded-full" />
     ),
@@ -46,7 +46,7 @@ export const feats = [
   },
   {
     title: "Office Perks",
-    desc: "Free snacks, coffee & Netlix.",
+    desc: "Free snacks, coffee & Netflix.",
     logo: (
       <AiOutlineCoffee className="text-orange-500 hover:text-white hover:bg-orange-500 w-16 h-16 border-2 border-solid border-orange-500 p-2 rounded-full" />
     ),
