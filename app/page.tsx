@@ -29,7 +29,7 @@ const services = [
 export default function Home() {
   return (
     <main className="relative flex max-w-screen min-h-screen overflow-x-hidden flex-col items-center justify-center">
-      <section className="relative flex flex-col items-center justify-center w-full bg-red-500">
+      <section className="relative flex flex-col items-center justify-center w-full bg-white">
         {/* <div className="overflow-hidden w-full h-screen">
           <Image
             src={MAINIMAGE}
