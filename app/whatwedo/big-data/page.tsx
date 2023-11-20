@@ -6,21 +6,22 @@ const accordions = [
   {
     title: "Drilling",
     content:
-      "Consurv Technic has been involved in petabytes worth of data extraction and mining from plant facilities over the last few years. Our team of data analysts and Subject Matter Experts (SMEs) has the capability of cleaning data, sieving through and preparing raw data for further analysis.",
+      "Drilling analytics usually refers to the usage of available drilling data to further improve the drilling performance. Drilling performance differs in different situations; some might prefer higher penetration rates, lower mean time between failure, or maximum return per foot drilled.",
   },
   {
     title: "PM & PdM",
     content:
-      "Creating and managing data warehouses and data lakes on pro or on the cloud are our core competencies. From here on, our data scientists and SMEs work hand-in-hand to develop algorithms and deep learning models to help clients make sound decisions in both green and brown facilities development and operations.",
+      "The advent of Artificial Intelligence (AI) and the IR 4.0 has driven the maintenance process into a new dimension with Predictive Maintenance (PdM) and Prescriptive Maintenance (PM) being the two main methods, PdM involves attaching sensors and monitoring gadgets to inspect when these machines actually require maintenance. PM brings it further by automating the maintenance process as well.",
   },
   {
     title: "Fraud Detection",
     content:
-      "Consurv has also embarked on Edge Computing, a powerful tool to process Big Data at the site.",
+      "Fraud detection involves many analyses and processes which allow businesses and companies to identify fraudulent activities mainly involving finance.",
   },
   {
     title: "Market Basket Analysis",
-    content: "lorem ipsum dolor amet",
+    content:
+      "Market Basket analysis is crucial in increasing revenues for retailers and sellers. This analysis provides insight into the customer’s buying patterns and behaviour by identifying potential useful and important connections. Mostly it is used to extract knowledge about unexpected trends.",
   },
 ];
 
