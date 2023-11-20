@@ -1,11 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import MAINIMAGE from "@/public/what-we-do.jpg";
-import { useState } from "react";
-import IMAGE1 from "@/public/lottie/Animation - 1700018502876.gif";
-import IMAGE2 from "@/public/lottie/Animation - 1700018604752.gif";
-import IMAGE3 from "@/public/lottie/Animation - 1700018899897.gif";
+import IMAGE1 from "@/public/hero/319359bc-76c4-455c-ad1e-36fbe6074f1e.jpeg";
+import IMAGE2 from "@/public/hero/4fa6666d-8723-46bd-a901-0a851efaccc9.jpeg";
+import IMAGE3 from "@/public/hero/fb927a47-fa3d-4fc4-b048-ae6fba595282.jpeg";
 import Slideshow from "@/components/Slideshow";
 
 const services = [
@@ -54,22 +52,21 @@ export default function Home() {
             transform your ideas into solutions.
           </p>
         </header>
-        <div className="w-full flex flex-col sm:flex-row flex-wrap justify-center gap-x-10 px-10 sm:px-0">
+        <div className="w-full flex flex-col sm:flex-row flex-wrap justify-center gap-x-10 px-10 sm:px-0 h-fit">
           {services.map((service, index) => (
             <div
               key={index}
               className="flex flex-col items-center justify-start w-full sm:w-1/2 xl:w-[20%] my-4 bg-zinc-100 rounded-md shadow-md"
             >
-              <Image
-                src={service.image}
-                width={0}
-                height={0}
-                sizes="100%"
-                alt={service.name}
-                className="object-cover rounded-md w-full h-1/2"
-              />
+              <div className="flex-1">
+                <Image
+                  src={service.image}
+                  alt={service.name}
+                  className="object-cover rounded-md w-full h-full"
+                />
+              </div>
 
-              <div className="flex flex-col items-center justify-start h-1/2 w-full p-6">
+              <div className="flex flex-col items-center justify-start flex-1 p-6">
                 <h1 className="text-zinc-800 text-2xl font-bold">
                   {service.name}
                 </h1>

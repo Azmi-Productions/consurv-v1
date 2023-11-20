@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import LEFTIMAGE from "@/public/big-data/B1-768x307.jpg";
 import RIGHTIMAGE from "@/public/big-data/B2-768x307.jpg";
+import { Accordion, AccordionItem } from "@nextui-org/react";
 
 const accordions = [
   {
@@ -70,17 +73,18 @@ const Page = () => {
       </div>
 
       <div className="mt-24">
-        {accordions.map((accordion, index) => (
-          <details
-            key={index}
-            className="bg-white p-5 w-full border-b-2 border-solid border-blue-700 drop-shadow-2xl mb-1 cursor-pointer"
-          >
-            <summary className="text-md font-bold text-zinc-800">
-              {accordion.title}
-            </summary>
-            <p className="text-zinc-800">{accordion.content}</p>
-          </details>
-        ))}
+        <Accordion selectionMode="multiple">
+          {accordions.map((accordion, index) => (
+            <AccordionItem
+              key={index}
+              aria-label="Accordions"
+              title={accordion.title}
+              className="bg-white px-5 w-full border-b-2 border-solid border-blue-700 drop-shadow-2xl mb-1"
+            >
+              <p className="text-zinc-800"> {accordion.content}</p>
+            </AccordionItem>
+          ))}
+        </Accordion>
       </div>
     </main>
   );
