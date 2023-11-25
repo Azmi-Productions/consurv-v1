@@ -3,8 +3,8 @@
 import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import IMAGE1 from "@/public/what-we-do.jpg";
-import IMAGE2 from "@/public/hero/4fa6666d-8723-46bd-a901-0a851efaccc9.jpeg";
-import IMAGE3 from "@/public/hero/319359bc-76c4-455c-ad1e-36fbe6074f1e.jpeg";
+import IMAGE2 from "@/public/banner.jpg";
+import IMAGE3 from "@/public/WhatsApp-Image-2021-02-03-at-09.08.49.jpeg";
 
 const images = [IMAGE1, IMAGE2, IMAGE3];
 const delay = 2500;

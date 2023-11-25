@@ -5,40 +5,64 @@ import IMAGE1 from "@/public/hero/319359bc-76c4-455c-ad1e-36fbe6074f1e.jpeg";
 import IMAGE2 from "@/public/hero/4fa6666d-8723-46bd-a901-0a851efaccc9.jpeg";
 import IMAGE3 from "@/public/hero/fb927a47-fa3d-4fc4-b048-ae6fba595282.jpeg";
 import Slideshow from "@/components/Slideshow";
+import emailjs from "@emailjs/browser";
+import { useRouter } from "next/navigation";
+import { useRef } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 const services = [
   {
     image: IMAGE1,
+    link: "/whatwedo/big-data",
     name: "Big Data",
     desc: "Consurv Technic has been involved in petabytes worth of data extraction and mining from plant facilities over the last few years. Our experiences include projects with Shell and PETRONAS (RAPID).",
   },
   {
     image: IMAGE2,
+    link: "/whatwedo/digital-solutions",
     name: "Digital Solutions",
     desc: "Many times, our clients share their problem statements with us. Whether it is as simple as creating (front end) reporting dashboards or as complex as optimizing the operations and production of a refinery. You name it, we solve it.",
   },
   {
     image: IMAGE3,
+    link: "/whatwedo/system-integration",
     name: "System Integration",
     desc: "Integration of multiple systems is key to operating facilities and companies efficiently. It also ensures that maximum effectiveness is achieved. We have installed, commissioned and also integrated multiple systems for Oil & Gas and utility clients. Consurv is also certified SI for OSIsoft.",
   },
 ];
 
 export default function Home() {
+  const router = useRouter();
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_lsrfoxb",
+        "template_kic56lm",
+        //@ts-ignore
+        formRef.current,
+        "fjYI50W1rws4c3Rft"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          window.scrollTo(0, 0);
+          toast.success("Email sent!");
+          formRef.current?.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error("Email not sent!");
+        }
+      );
+  };
   return (
     <main className="relative flex max-w-screen min-h-screen overflow-x-hidden flex-col items-center justify-center">
+      <Toaster position="top-center" reverseOrder={false} />
       <section className="relative flex flex-col items-center justify-center w-full bg-white">
-        {/* <div className="overflow-hidden w-full h-screen">
-          <Image
-            src={MAINIMAGE}
-            priority
-            width={0}
-            height={0}
-            sizes="100vw"
-            alt="What we do"
-            className="object-cover w-full h-full bg-center"
-          />
-        </div> */}
         <Slideshow />
       </section>
 
@@ -56,7 +80,8 @@ export default function Home() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-start w-full sm:w-1/2 xl:w-[20%] my-4 bg-zinc-100 rounded-md shadow-md"
+              className="flex flex-col items-center justify-start w-full sm:w-1/2 xl:w-[20%] my-4 bg-zinc-100 rounded-md shadow-md cursor-pointer hover:shadow-xl transition-all duration-300"
+              onClick={() => router.push(service.link)}
             >
               <div className="flex-1">
                 <Image
@@ -90,26 +115,32 @@ export default function Home() {
         </header>
 
         <div className="flex flex-col gap-y-10 lg:flex-row w-full py-24">
-          <div className="flex-1 flex flex-col gap-10 items-center justify-center w-full">
+          <form
+            ref={formRef}
+            onSubmit={sendEmail}
+            className="flex-1 flex flex-col gap-10 items-center justify-center w-fit"
+          >
             <div className="flex flex-col gap-2">
-              <label htmlFor="name" className="text-zinc-800">
+              <label htmlFor="from_name" className="text-zinc-800">
                 Name
               </label>
               <input
                 type="text"
-                id="name"
+                name="from_name"
                 className="w-full sm:w-[500px] text-zinc-800 focus:outline-none ring-gray-400 ring-1 rounded-md p-2"
+                required
               />
             </div>
 
             <div className="flex flex-col gap-2">
-              <label htmlFor="email" className="text-zinc-800">
+              <label htmlFor="from_email" className="text-zinc-800">
                 Email
               </label>
               <input
                 type="email"
-                id="email"
+                name="from_email"
                 className="w-full sm:w-[500px] text-zinc-800 focus:outline-none ring-gray-400 ring-1 rounded-md p-2"
+                required
               />
             </div>
 
@@ -119,10 +150,19 @@ export default function Home() {
               </label>
               <textarea
                 id="message"
+                name="message"
                 className="w-full sm:w-[500px] text-zinc-800 focus:outline-none ring-gray-400 ring-1 rounded-md p-2"
+                required
               />
             </div>
-          </div>
+
+            <button
+              type="submit"
+              className="bg-zinc-800 text-white px-10 py-2 rounded-md shadow-md hover:shadow-xl transition-all duration-300"
+            >
+              Send
+            </button>
+          </form>
 
           <div className="flex-1 flex items-center justify-center">
             <iframe

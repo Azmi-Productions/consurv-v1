@@ -9,16 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
     "@nextui-org/react": "^2.2.9",
     "framer-motion": "^10.16.4",
     "next": "14.0.1",
     "next-reveal": "^1.0.6",
-    "nodemailer": "^6.9.7",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^4.11.0",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.12.0",
     "react-responsive-masonry": "^2.1.7",
     "sharp": "^0.32.6"
   },
