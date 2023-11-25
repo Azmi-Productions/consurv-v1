@@ -92,6 +92,14 @@ const Page = () => {
                 </ul>
               </>
             )}
+            <div className="mt-5">
+              <a
+                href="mailto:farahin@consurv.com.my"
+                className="bg-zinc-800 text-white px-10 py-2 rounded-md shadow-md hover:shadow-xl transition-all duration-300"
+              >
+                Apply Now!
+              </a>
+            </div>
           </div>
         ))}
       </div>
