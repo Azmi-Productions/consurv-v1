@@ -110,7 +110,13 @@ export default function Home() {
           <p className="text-zinc-700 text-center text-sm sm:text-xl">
             We are here to help you 7 days a week and respond within 24 hours.
             <br />
-            Plus, you can find most answers to your questions right on FAQ page.
+            Plus, you can find most answers to your questions{" "}
+            <span
+              className="text-blue-500 underline cursor-pointer"
+              onClick={() => router.push("/faq")}
+            >
+              right on FAQ page.
+            </span>
           </p>
         </header>
 
