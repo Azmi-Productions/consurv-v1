@@ -27,7 +27,7 @@ const navigation = {
     },
     {
       name: "LinkedIn",
-      href: "https://www.linkedin.com/company/consurv-technic-sdn-bhd/https://twitter.com/DynaConsurv",
+      href: "https://www.linkedin.com/company/consurv-technic-sdn-bhd",
       icon: (props: any) => <FaLinkedin {...props} />,
     },
   ],
