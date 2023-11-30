@@ -120,7 +120,7 @@ export default function Home() {
           </p>
         </header>
 
-        <div className="flex flex-col gap-y-10 lg:flex-row w-full py-24">
+        <div className="flex flex-col items-center justify-center gap-y-10 lg:flex-row w-full py-24">
           <form
             ref={formRef}
             onSubmit={sendEmail}
