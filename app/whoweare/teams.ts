@@ -20,13 +20,6 @@ export const teams = [
     link: "https://www.linkedin.com/in/mohamed-assari-32b1151b",
   },
   {
-    name: "Kamarulzaman Mohd",
-    position: "Director",
-    desc: "Kamarulzaman was the CEO of CaterhamJet Malaysia. He has also worked for AirAsia (2010-2013) as Regional Head of Customer Experience. He served PETRONAS for 13 years as an Electronic Systems Engineer: (1999–2005) for PETRONAS OPEL Touring Car and Team Sauber PETRONAS F1. He was promoted to Senior Manager of the Frontier Technology Unit, Research & Technology Division and subsequently to Head of Technical Services at PETRONAS Ammonia. Kamarulzaman graduated with a Bachelor of Engineering (B. Eng) (Honours) degree in Electrical and Electronics from Imperial College, London.",
-    image: KAMARULZAMAN,
-    link: "https://www.linkedin.com/in/zaman-ahmad-79192023/",
-  },
-  {
     name: "Mohd Fuad",
     position: "IT Manager",
     desc: "Coming from a full stack developer background, well verse with multiple programming language, system design and architecture, and with years of experience in Oil and Gas industry, Fuad has developed a thorough understanding in Process Engineering and Business Flow, bringing in the bridge between Engineering and System within the company.",
