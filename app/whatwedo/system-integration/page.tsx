@@ -33,7 +33,7 @@ const Page = () => {
       </div>
 
       <div className="flex items-center justify-center text-lg px-10">
-        <p className="text-gray-500 text-3xl">
+        <p className="text-zinc-800">
           Consurv has installed, commissioned and integrated multiple systems
           for Oil & Gas and utility clients. We are also certified SI for
           OSIsoft. The team has experience in System Architecture, developing
