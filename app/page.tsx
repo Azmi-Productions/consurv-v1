@@ -9,6 +9,7 @@ import emailjs from "@emailjs/browser";
 import { useRouter } from "next/navigation";
 import { useRef } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import { Button } from "@nextui-org/react";
 
 const services = [
   {
@@ -162,12 +163,12 @@ export default function Home() {
               />
             </div>
 
-            <button
+            <Button
               type="submit"
               className="bg-zinc-800 text-white px-10 py-2 rounded-md shadow-md hover:shadow-xl transition-all duration-300"
             >
               Send
-            </button>
+            </Button>
           </form>
 
           <div className="flex-1 flex items-center justify-center">
