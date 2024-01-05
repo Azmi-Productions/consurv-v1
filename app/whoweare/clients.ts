@@ -1,21 +1,46 @@
-import MURPHY from "@/public/whoweare/clients/murphy-oil-squarelogo-1384797126604-150x150.png";
-import TALISMAN from "@/public/whoweare/clients/talisman-energy-logo-png-transparent-150x150.png";
-import TNB from "@/public/whoweare/clients/tenaga-nasional-150x150.jpg";
+// NOT FOUND
+// 3, 7, 9 11, 12, 13, 14 15 16, 18, 22, 25, 28, 29, 30, 38, 41 42 43, 78, 83, 84
+
+// CONFLICTS
+// 9 11, 14 15 16, 19 89, 23 24, 26 27, 41 42 43, 46 47 48 49 50, 51-76, 79 80 81, 85 86 87, 91 92 93,
 
 export const clients = [
-  {
-    name: "Murphy Oil",
-    image: MURPHY,
-    link: "https://www.murphyoilcorp.com/",
-  },
-  {
-    name: "Talisman Energy",
-    image: TALISMAN,
-    link: "https://www.talisman-energy.com/",
-  },
-  {
-    name: "Tenaga Nasional Berhad",
-    image: TNB,
-    link: "https://www.tnb.com.my/",
-  },
+  "https://3fresources.com/app/themes/3f/images/3f-logo.svg",
+  "https://gitlab.com/uploads/-/system/group/avatar/2104553/AEM-Logo-Footer-v3.png",
+  "https://sigmafine.net/wp-content/uploads/2021/07/Calibr8_FULL_LOGO_TRANSPARENT.png",
+  "https://datasonic.com.my/wp-content/uploads/2022/09/Datasonic-Logo.png",
+  "https://deepsea-resources.com/wp-content/uploads/2020/09/cropped-Artboard-1-2.png",
+  "https://epoms.com.my/main/wp-content/uploads/2023/02/epoms-logo-header.png",
+  "https://www.epicgroup.com.my/img/sub3-color.png",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Hess_Corporation_Logo.svg/1200px-Hess_Corporation_Logo.svg.png",
+  "https://www.hibiscuspetroleum.com/wp-content/uploads/2020/12/Hibiscus-Petroleum_Master_Logo_transparent.png",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1200px-IBM_logo.svg.png",
+  "https://www.international-petroleum.com/wp-content/uploads/2021/06/IPC_200x100.svg",
+  "https://www.pinclipart.com/picdir/middle/206-2064733_worleyparsons-logo-vector-www-jx-nippon-oil-and.png",
+  "https://www.edms-consultants.com/wp-content/uploads/2015/06/lundin-400x300-e1630653819505.jpg",
+  "https://mymagic-central.s3.amazonaws.com/uploads/organization/thumbnail/dd98718b094e5cd5da1b354cf13f5c3a3a8eab45.adaptiveResize.320x320.png",
+  "https://makhostia.com/wp-content/uploads/2022/06/logomakhostiapng.png",
+  "https://www.mmc.com.my/wpimages/Malakoff%20with.png",
+  "https://upload.wikimedia.org/wikipedia/commons/8/85/MCMC_Logo.png",
+  "https://eralab.com.my/wp-content/uploads/2021/04/MRCSB-Transparent.png",
+  "https://sdn.signalhire.co/storage/company/8b13/f7c9/661b/bb37/3455/a27f/8e26/254c.webp",
+  "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Ophir_Energy_logo.svg/1200px-Ophir_Energy_logo.svg.png",
+  "https://i0.wp.com/verticalwell.com/wp-content/uploads/2019/10/ppcp-logo.jpg?resize=260%2C131",
+  "https://www.esteem.com.my/wp-content/uploads/2018/02/client08.jpg",
+  "https://iogse.gov.my/wp-content/uploads/2023/10/Petro-Group-Logo-Vertical-02.png",
+  "https://www.highbase.com.my/v1/wp-content/uploads/2018/02/Petrofac.png",
+  "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Petronas_2013_logo.svg/800px-Petronas_2013_logo.svg.png",
+  "https://petrosains.com.my/wp-content/themes/petrosains/img/petrosains-logo-color.svg",
+  "https://drillingcontractor.org/wp-content/uploads/2019/06/PTTEP2.jpg",
+  "https://primelube.com.my/wp-content/uploads/2016/03/repsol.png",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/SapuraEnergy_Logo_Official.svg/1200px-SapuraEnergy_Logo_Official.svg.png",
+  "https://1000logos.net/wp-content/uploads/2017/06/Shell-Logo.png",
+  "https://www.sediateguh.com/wp-content/uploads/2022/11/sedia-logo-latest-3.png",
+  "https://seeklogo.com/images/S/sime-darby-logo-DA85D99D2A-seeklogo.com.png",
+  "https://1.bp.blogspot.com/-ZF2MqoyfYss/Uy27y2FqBgI/AAAAAAAAAIM/HLeUO3uNLgM/s1600/Talisman%5B1%5D.png",
+  "https://scontent.fkul15-1.fna.fbcdn.net/v/t39.30808-6/368622080_1495777901188927_3264393861103252699_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=6nKKzDTUaKEAX_ixIVl&_nc_oc=AQln17gxOpDWZFu9ad51pVQNBKUEM70zbbHCCEz5RCnUNkTjf064n_yQ0fX0POb4IgA&_nc_ht=scontent.fkul15-1.fna&oh=00_AfDdWos9-qp-GIKyav5eXbkt1gtL9V6umuUVyLT0jCVwUA&oe=659AD978",
+  "https://storage.pitchin.my/companylogo/1673760092_5787_2563_comp_logo_img.png?sv=2020-04-08&si=ReadOnly&sr=b&sig=MtWaCRR6qUonAsIA%2BmnaS888Vpp5U%2F9dfYOiLvOIlt8%3D",
+  "https://terataimaya.com/wp-content/uploads/2020/04/cropped-cropped-ico.png",
+  "https://upload.wikimedia.org/wikipedia/commons/5/50/UTP-logo.png",
+  "https://www.wakomas.com.my/wp-content/uploads/2023/08/wakomas-logo-footer-v2.png",
 ];

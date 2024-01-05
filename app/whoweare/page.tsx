@@ -3,8 +3,19 @@ import Link from "next/link";
 import { teams } from "./teams";
 import { clients } from "./clients";
 import { partners } from "./partners";
+import InfiniteHorizontalCarousel from "@/components/infinite-horizontal-carousel";
 
 const Page = () => {
+  const splitClients = (arr: any[]) => {
+    const length = Math.ceil(arr.length / 3);
+    const firstLayer = arr.slice(0, length);
+    const secondLayer = arr.slice(length, length * 2);
+    const thirdLayer = arr.slice(length * 2);
+    return [firstLayer, secondLayer, thirdLayer];
+  };
+
+  const [firstLayer, secondLayer, thirdLayer] = splitClients(clients);
+
   return (
     <main className="py-32 px-10 md:px-24 lg:px-40 bg-white">
       <header className="flex flex-col items-center justify-center gap-10">
@@ -75,32 +86,23 @@ const Page = () => {
         Our Clients
       </h2>
 
-      <section className="flex flex-row flex-wrap items-center justify-center gap-28">
-        {clients.map((client, index) => (
-          <Image
-            key={index}
-            src={client.image}
-            alt={client.name}
-            unoptimized
-            className="object-contain w-60 h-60"
-          />
-        ))}
+      <section className="space-y-5">
+        {/* LAYER 1 */}
+        <InfiniteHorizontalCarousel items={firstLayer} />
+
+        {/* LAYER 2 */}
+        <InfiniteHorizontalCarousel items={secondLayer} />
+
+        {/* LAYER 3 */}
+        <InfiniteHorizontalCarousel items={thirdLayer} />
       </section>
 
       <h2 className="text-zinc-800 font-bold text-5xl text-center my-24">
         Our Partners
       </h2>
 
-      <section className="flex flex-row items-center justify-center gap-10 flex-wrap">
-        {partners.map((partner, index) => (
-          <Image
-            key={index}
-            src={partner.image}
-            alt={partner.name}
-            unoptimized
-            className="object-contain w-60 h-60"
-          />
-        ))}
+      <section>
+        <InfiniteHorizontalCarousel items={partners} />
       </section>
     </main>
   );
