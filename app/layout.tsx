@@ -4,6 +4,7 @@ import "./globals.css";
 import NavigationBar from "@/components/v2/Navbar";
 import NextProvider from "@/context/NextUIProvider";
 import Footer from "@/components/Footer";
+import { Toaster } from "react-hot-toast";
 
 const sfPro = localFont({
   src: "../public/fonts/SF-Pro-Display-Medium.otf",
@@ -25,6 +26,7 @@ export default function RootLayout({
         <NextProvider>
           <NavigationBar />
           {children}
+          <Toaster position="top-center" reverseOrder={false} />
           <Footer />
         </NextProvider>
       </body>

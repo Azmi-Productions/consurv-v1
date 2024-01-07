@@ -2,16 +2,14 @@
 
 import Image from "next/image";
 import COMPANYLOGO from "@/public/ct-logo-1.png";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
   Link,
-  Button,
 } from "@nextui-org/react";
-import { RevealWrapper } from "next-reveal";
 import { Dialog } from "@headlessui/react";
 import { AiOutlineClose as XMarkIcon } from "react-icons/ai";
 import { FaBars as Bars3Icon } from "react-icons/fa";
@@ -44,16 +42,7 @@ const joinus = [
 ];
 
 const NavigationBar = () => {
-  const [blur, handleBlur] = useState<boolean>(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
-        handleBlur(true);
-      } else handleBlur(false);
-    });
-  }, []);
 
   return (
     <>
