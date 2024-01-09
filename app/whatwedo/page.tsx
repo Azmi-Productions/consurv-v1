@@ -11,7 +11,7 @@ const Page = () => {
             <p className="text-gray-500">{item.desc1}</p>
             <p className="text-gray-500">{item.desc2}</p>
           </div>
-          <div className="bg-zinc-800 h-1 w-full my-10"></div>
+          <div className="bg-zinc-800 h-1 w-full my-10" />
         </Fragment>
       ))}
     </main>
