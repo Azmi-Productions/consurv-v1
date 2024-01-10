@@ -5,6 +5,10 @@ import LEFTIMAGE from "@/public/system-integrations/S1-768x348.png";
 import RIGHTIMAGE from "@/public/system-integrations/S3-768x433.png";
 import { accordions } from "./accordions";
 import { Accordion, AccordionItem } from "@nextui-org/react";
+import DMPortal from "@/components/system-integration/dm-portal";
+import ESMART from "@/components/system-integration/esmart";
+import PrimeAssetEngin from "@/components/system-integration/pae";
+import ATLASDataInteg from "@/components/system-integration/ade";
 
 const Page = () => {
   return (
@@ -42,6 +46,11 @@ const Page = () => {
           years.
         </p>
       </div>
+
+      <DMPortal />
+      <ESMART />
+      <PrimeAssetEngin />
+      <ATLASDataInteg />
 
       <div className="mt-24">
         <Accordion selectionMode="multiple">

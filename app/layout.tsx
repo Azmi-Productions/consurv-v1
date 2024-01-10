@@ -5,9 +5,17 @@ import NavigationBar from "@/components/v2/Navbar";
 import NextProvider from "@/context/NextUIProvider";
 import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
+import { Inter } from "next/font/google";
 
 const sfPro = localFont({
   src: "../public/fonts/SF-Pro-Display-Medium.otf",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = {
@@ -22,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${sfPro.className} scroll-smooth`}>
+      <body className={`${inter.className} scroll-smooth`}>
         <NextProvider>
           <NavigationBar />
           {children}
