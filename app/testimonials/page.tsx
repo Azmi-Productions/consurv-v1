@@ -38,8 +38,11 @@ const Page = () => {
           <h1 className="text-zinc-800 text-5xl font-bold">Loading...</h1>
         </div>
       ) : (
-        <ResponsiveMasonry className="px-10 lg:px-80">
-          <Masonry columnsCount={3} gutter="10px">
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 300: 2, 500: 3, 700: 4, 900: 5 }}
+          className="px-10"
+        >
+          <Masonry gutter="10px">
             {shuffledTestimonials.map((testimonial, index) => {
               return (
                 <RevealWrapper
@@ -56,7 +59,7 @@ const Page = () => {
                     className="absolute w-full h-full bg-zinc-900/80 hidden group-hover:flex items-center justify-center"
                   >
                     <h1 className="text-blue-500 font-bold text-xl text-center duration-100">
-                      {testimonial.name}
+                      {testimonial.name.split(" ")[0]}
                     </h1>
                   </div>
                   <Image
