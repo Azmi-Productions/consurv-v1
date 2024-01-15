@@ -21,24 +21,12 @@ const whatwedo = [
     href: "/whatwedo/big-data",
   },
   {
-    name: "Real Time Data",
-    href: "/whatwedo/real-time-data",
-  },
-  {
-    name: "Data Analytics",
-    href: "/whatwedo/data-analytics",
-  },
-  {
     name: "Digital Solutions",
     href: "/whatwedo/digital-solutions",
   },
   {
     name: "System Integration",
     href: "/whatwedo/system-integration",
-  },
-  {
-    name: "System Development",
-    href: "/whatwedo/system-development",
   },
   {
     name: "Outsourcing",

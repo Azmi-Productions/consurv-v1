@@ -1,16 +1,10 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import NavigationBar from "@/components/v2/Navbar";
 import NextProvider from "@/context/NextUIProvider";
 import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
 import { Inter } from "next/font/google";
-
-const sfPro = localFont({
-  src: "../public/fonts/SF-Pro-Display-Medium.otf",
-  display: "swap",
-});
 
 const inter = Inter({
   subsets: ["latin"],

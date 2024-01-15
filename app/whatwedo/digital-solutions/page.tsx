@@ -5,6 +5,7 @@ import LEFTIMAGE from "@/public/digital-solutions/D1-768x307.jpg";
 import RIGHTIMAGE from "@/public/digital-solutions/D3-768x307.jpg";
 import { accordions } from "./accordions";
 import { Accordion, AccordionItem } from "@nextui-org/react";
+import SystemDev from "./SystemDev";
 
 const Page = () => {
   return (
@@ -49,6 +50,8 @@ const Page = () => {
           with programmers and data scientist.
         </p>
       </div>
+
+      <SystemDev />
 
       <div className="mt-24">
         <Accordion selectionMode="multiple">

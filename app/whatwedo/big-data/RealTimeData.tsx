@@ -22,10 +22,10 @@ const keyFeature = [
   },
 ];
 
-const Page = () => {
+const RealTimeData = () => {
   return (
     <main className="py-32 px-10 md:px-24 lg:px-40 bg-white">
-      <header className="flex flex-col items-center justify-center">
+      <header className="flex flex-col items-start justify-center">
         <h1 className="text-zinc-900 text-5xl font-bold">Real Time Data</h1>
         <p className="text-gray-800 text-2xl text-center">
           We provide real time data solution to clients, leveraging the top of
@@ -33,8 +33,8 @@ const Page = () => {
         </p>
       </header>
 
-      <div className="flex items-center justify-center text-lg px-10 mt-10">
-        <p className="text-zinc-800 text-center">
+      <div className="flex items-start justify-center text-lg mt-10">
+        <p className="text-zinc-800 text-left">
           Centralized Data and Tracking of Electrical Protection Relays System.
           <br />
           The system will be used to monitor thousands of electrical relays
@@ -45,7 +45,7 @@ const Page = () => {
 
       <div className="mt-24">
         <div className="flex flex-col items-start justify-center">
-          <h1 className="text-4xl font-bold text-zinc-800 underline mb-2">
+          <h1 className="text-3xl font-bold text-zinc-800 underline mb-2">
             Unique Value
           </h1>
           {uniqueValue.map((item, index) => (
@@ -54,7 +54,7 @@ const Page = () => {
         </div>
 
         <div className="flex flex-col items-start justify-center mt-10">
-          <h1 className="text-4xl font-bold text-zinc-800 underline">
+          <h1 className="text-3xl font-bold text-zinc-800 underline">
             Key Features
           </h1>
           <div className="grid grid-cols-2 grid-rows-2 w-full gap-10 mt-2">
@@ -76,4 +76,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default RealTimeData;

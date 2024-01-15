@@ -8,6 +8,21 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+@font-face {
+  font-family: "Helvetica";
+  src: url("../public/fonts/Helvetica/Helvetica.ttf");
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../public/fonts/Graphik/GraphikBold.otf");
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url("../public/fonts/Arial/Arialn.ttf");
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -24,4 +39,21 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
+}
+
+h1 {
+  font-family: "Graphik";
+}
+
+h2 {
+  font-family: "Helvetica";
+}
+
+h3, h4, h5, h6 {
+  font-family: "Arial";
+}
+
+p, span, li {
+  font-family: "sans-serif";
 }

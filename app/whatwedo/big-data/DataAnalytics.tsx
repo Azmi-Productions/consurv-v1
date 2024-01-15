@@ -41,10 +41,10 @@ const keyFeature = [
   },
 ];
 
-const Page = () => {
+const DataAnalytics = () => {
   return (
     <main className="py-32 px-10 md:px-24 lg:px-40 bg-white">
-      <header className="flex flex-col items-center justify-center">
+      <header className="flex flex-col items-start justify-center">
         <h1 className="text-zinc-900 text-5xl font-bold">Data Analytics</h1>
         <p className="text-gray-800 text-2xl text-center">
           We provide Data Wrangling, Data Extraction, Data Transformation and
@@ -52,7 +52,7 @@ const Page = () => {
         </p>
       </header>
 
-      <div className="flex flex-col items-start justify-center text-lg px-10 mt-10 border border-solid border-black p-5 rounded-md">
+      <div className="flex flex-col items-start justify-center text-lg px-10 mt-10">
         <h1 className="text-4xl font-bold text-zinc-800 underline mb-2">
           Unified Data Platform
         </h1>
@@ -69,7 +69,7 @@ const Page = () => {
 
         <div className="mt-10">
           <div className="flex flex-col items-start justify-center">
-            <h1 className="text-4xl font-bold text-zinc-800 underline mb-2">
+            <h1 className="text-3xl font-bold text-zinc-800 underline mb-2">
               Unique Value
             </h1>
             <h2 className="text-2xl text-zinc-800">
@@ -103,7 +103,7 @@ const Page = () => {
           </div>
 
           <div className="flex flex-col items-start justify-center mt-10">
-            <h1 className="text-4xl font-bold text-zinc-800 underline">
+            <h1 className="text-3xl font-bold text-zinc-800 underline">
               Key Features
             </h1>
             <div className="grid grid-cols-2 grid-rows-2 w-full gap-10 mt-2">
@@ -123,7 +123,9 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-start justify-center text-lg px-10 mt-10 border border-solid border-black p-5 rounded-md">
+      <hr className="my-10" />
+
+      <div className="flex flex-col items-start justify-center text-lg px-10 mt-10">
         <h1 className="text-4xl font-bold text-zinc-800 underline mb-2">
           Digital Stations
         </h1>
@@ -135,7 +137,7 @@ const Page = () => {
 
         <div className="mt-10">
           <div className="flex flex-col items-start justify-center">
-            <h1 className="text-4xl font-bold text-zinc-800 underline mb-2">
+            <h1 className="text-3xl font-bold text-zinc-800 underline mb-2">
               Unique Value
             </h1>
 
@@ -152,7 +154,7 @@ const Page = () => {
           </div>
 
           <div className="flex flex-col items-start justify-center mt-10">
-            <h1 className="text-4xl font-bold text-zinc-800 underline">
+            <h1 className="text-3xl font-bold text-zinc-800 underline">
               Key Features
             </h1>
             <ul className="list-disc list-inside">
@@ -175,4 +177,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default DataAnalytics;

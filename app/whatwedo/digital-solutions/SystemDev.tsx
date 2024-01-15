@@ -10,12 +10,12 @@ const keyFeature = [
   "Security Configuration",
 ];
 
-const Page = () => {
+const SystemDev = () => {
   return (
     <main className="py-32 px-10 md:px-24 lg:px-40 bg-white">
-      <header className="flex flex-col items-center justify-center">
+      <header className="flex flex-col items-start justify-center">
         <h1 className="text-zinc-900 text-5xl font-bold">System Development</h1>
-        <p className="text-gray-800 text-2xl text-center">
+        <p className="text-gray-800 text-2xl text-left">
           We provide customized solution based on clients need using NodeJS and
           .NET Core framework.
         </p>
@@ -35,7 +35,7 @@ const Page = () => {
 
         <div className="mt-10">
           <div className="flex flex-col items-start justify-center">
-            <h1 className="text-4xl font-bold text-zinc-800 underline mb-2">
+            <h1 className="text-3xl font-bold text-zinc-800 underline mb-2">
               Unique Value
             </h1>
             <ul className="list-disc list-item">
@@ -48,7 +48,7 @@ const Page = () => {
           </div>
 
           <div className="flex flex-col items-start justify-center mt-10">
-            <h1 className="text-4xl font-bold text-zinc-800 underline">
+            <h1 className="text-3xl font-bold text-zinc-800 underline">
               Key Features
             </h1>
             <ul className="list-disc list-item">
@@ -65,4 +65,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default SystemDev;

@@ -4,6 +4,8 @@ import Image from "next/image";
 import LEFTIMAGE from "@/public/big-data/B1-768x307.jpg";
 import RIGHTIMAGE from "@/public/big-data/B2-768x307.jpg";
 import { Accordion, AccordionItem } from "@nextui-org/react";
+import DataAnalytics from "./DataAnalytics";
+import RealTimeData from "./RealTimeData";
 
 const accordions = [
   {
@@ -71,6 +73,9 @@ const Page = () => {
           Edge Computing, a powerful tool to process Big Data at the site.
         </p>
       </div>
+
+      <RealTimeData />
+      <DataAnalytics />
 
       <div className="mt-24">
         <Accordion selectionMode="multiple">
