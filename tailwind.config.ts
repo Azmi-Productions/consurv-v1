@@ -14,6 +14,7 @@ const config: Config = {
         helvetica: ["Helvetica", "sans-serif"],
         graphik: ["Graphik", "sans-serif"],
         arial: ["Arial", "sans-serif"],
+        custom: ["Graphik", "Arial", "Helvetica", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

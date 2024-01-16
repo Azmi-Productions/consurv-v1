@@ -15,7 +15,9 @@
 
 @font-face {
   font-family: "Graphik";
-  src: url("../public/fonts/Graphik/GraphikBold.otf");
+  letter-spacing: normal;
+  line-height: 16px;
+  src: url("../public/fonts/Graphik/GraphikRegular.otf");
 }
 
 @font-face {

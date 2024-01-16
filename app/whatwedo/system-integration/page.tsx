@@ -14,7 +14,7 @@ const Page = () => {
   return (
     <main className="py-32 px-10 md:px-24 lg:px-40 bg-white">
       <header className="flex flex-col items-center justify-center gap-10">
-        <h1 className="text-zinc-800 text-5xl">System Integration</h1>
+        <h1 className="text-zinc-800 text-5xl font-bold">System Integration</h1>
         <p className="text-gray-500 text-2xl text-center">
           Integration of multiple systems is the key to operating facilities and
           companies efficiently and effectively.

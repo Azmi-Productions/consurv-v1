@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { Avatar } from "@nextui-org/react";
 
 const Page = ({ params }: { params: { slug: string } }) => {
-  const [data, setData] = useState({} as any);
+  const [data, setData] = useState<any>({});
 
   useEffect(() => {
     const testimonial = testimonials.find(
@@ -19,7 +19,7 @@ const Page = ({ params }: { params: { slug: string } }) => {
       <header className="flex flex-row items-center justify-start gap-10 lg:px-40 mb-24 border-b py-10 border-zinc-900">
         <Avatar src={data.image} className="w-28 h-28" />
         <div className="flex flex-col">
-          <h1 className="text-zinc-800 text-2xl font-bold">{data.name}</h1>
+          <h1 className="text-zinc-800 text-4xl font-bold">{data.name}</h1>
           <div>
             <h1 className="text-zinc-800 text-sm md:text-2xl">
               <span className="text-lg md:text-xl font-bold">University: </span>

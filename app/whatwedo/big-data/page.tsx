@@ -34,7 +34,7 @@ const Page = () => {
   return (
     <main className="py-32 px-10 md:px-24 lg:px-40 bg-white">
       <header className="flex flex-col items-center justify-center gap-10">
-        <h1 className="text-zinc-800 text-5xl">Big Data</h1>
+        <h1 className="text-zinc-800 text-5xl font-bold">Big Data</h1>
         <p className="text-gray-500 text-2xl text-center">
           With the advance of computing prowess, the ability to crunch large
           amounts of data has proven to be beneficial to us in many aspects,
