@@ -16,7 +16,7 @@ const Page = ({ params }: { params: { slug: string } }) => {
 
   return (
     <main className="py-48 px-10 md:px-24 lg:px-40 bg-white">
-      <header className="flex flex-row items-center justify-start gap-10 lg:px-40 mb-24 border-b py-10 border-zinc-900">
+      <header className="flex flex-row items-center justify-start gap-10 mb-24 border-b py-10 border-zinc-900">
         <Avatar src={data.image} className="w-28 h-28" />
         <div className="flex flex-col">
           <h1 className="text-zinc-800 text-4xl font-bold">{data.name}</h1>
@@ -43,7 +43,7 @@ const Page = ({ params }: { params: { slug: string } }) => {
         </div>
       </header>
 
-      <section className="px-10">
+      <section>
         {data.para?.map((paragraph: string, index: number) => {
           return (
             <p
