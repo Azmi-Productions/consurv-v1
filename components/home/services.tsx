@@ -17,13 +17,13 @@ const services = [
     image: IMAGE2,
     link: "/whatwedo/digital-solutions",
     name: "Digital Solutions",
-    desc: "Many times, our clients share their problem statements with us. Whether it is as simple as creating (front end) reporting dashboards or as complex as optimizing the operations and production of a refinery. You name it, we solve it.",
+    desc: "Many times, our clients share their problem statements with us. Whether it is as simple as creating (front end) dashboards or as complex as optimizing the operations and production of a refinery, we solve it.",
   },
   {
     image: IMAGE3,
     link: "/whatwedo/system-integration",
     name: "System Integration",
-    desc: "Integration of multiple systems is key to operating facilities and companies efficiently. It also ensures that maximum effectiveness is achieved. We have installed, commissioned and also integrated multiple systems for Oil & Gas and utility clients. Consurv is also certified SI for OSIsoft.",
+    desc: "Integration of multiple systems is key to operating facilities and companies efficiently. It also ensures that maximum effectiveness is achieved. We have installed, commissioned and integrated multiple systems for Oil & Gas and utility clients.",
   },
 ];
 
