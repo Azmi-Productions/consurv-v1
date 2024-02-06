@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import IMAGE1 from "@/public/services/b87f6aa6-7b2b-45b0-ae77-f7eeaca729b3.jpeg";
-import IMAGE2 from "@/public/services/digital_solution.webp";
+import IMAGE2 from "@/public/services/Consurv Banner.png";
 import IMAGE3 from "@/public/services/system-integration.jpeg";
 
 const services = [
@@ -11,7 +11,7 @@ const services = [
     image: IMAGE1,
     link: "/whatwedo/big-data",
     name: "Big Data",
-    desc: "Consurv Technic has been involved in petabytes worth of data extraction and mining from plant facilities over the last few years. Our experiences include projects with Shell and PETRONAS (RAPID).",
+    desc: "Consurv Technic extracts and mines petabytes worth of data from plant facilities across multiple industries. We transform these data to help our clients like Shell, PETRONAS and Sime Darby in operations, maintenance and production.",
   },
   {
     image: IMAGE2,
