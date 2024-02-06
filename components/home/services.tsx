@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import IMAGE1 from "@/public/services/marketing-big-data-examples-applications.avif";
 import IMAGE2 from "@/public/services/digital_solution.webp";
-import IMAGE3 from "@/public/hero/fb927a47-fa3d-4fc4-b048-ae6fba595282.jpeg";
+import IMAGE3 from "@/public/services/system-integration.jpeg";
 
 const services = [
   {
