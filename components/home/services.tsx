@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import IMAGE1 from "@/public/services/marketing-big-data-examples-applications.avif";
+import IMAGE1 from "@/public/services/1.jpg";
 import IMAGE2 from "@/public/services/digital_solution.webp";
 import IMAGE3 from "@/public/services/system-integration.jpeg";
 
