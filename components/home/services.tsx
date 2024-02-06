@@ -40,11 +40,11 @@ const Services = () => {
           transform your ideas into solutions.
         </p>
       </header>
-      <div className="w-full flex flex-col sm:flex-row flex-wrap justify-center gap-x-10 px-10 sm:px-0 h-fit">
+      <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-x-10 px-10 ">
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-start w-full sm:w-1/2 xl:w-[20%] my-4 bg-zinc-100 rounded-md shadow-md cursor-pointer hover:shadow-xl transition-all duration-300"
+            className="flex flex-col items-center justify-start w-full my-4 bg-zinc-100 rounded-md shadow-md cursor-pointer hover:shadow-xl transition-all duration-300"
             onClick={() => router.push(service.link)}
           >
             <div className="flex-1">
