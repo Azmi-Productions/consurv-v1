@@ -38,7 +38,7 @@ const Page = () => {
         <p className="text-gray-500 text-2xl text-center">
           With the advance of computing prowess, the ability to crunch large
           amounts of data has proven to be beneficial to us in many aspects,
-          especially in the O&G industry
+          throughout all industries.
         </p>
       </header>
 
@@ -55,23 +55,6 @@ const Page = () => {
           unoptimized
           className="object-contain rounded-md w-[150px] h-[150px] md:w-[500px] md:h-[500px]"
         />
-      </div>
-
-      <div className="flex items-center justify-center text-lg px-10">
-        <p className="text-zinc-800">
-          Consurv Technic has been involved in petabytes worth of data
-          extraction and mining from plant facilities over the last few years.
-          Our team of data analysts and Subject Matter Experts (SMEs) has the
-          capability of cleaning data, sieving through and preparing raw data
-          for further analysis.
-          <br />
-          Creating and managing data warehouses and data lakes on pro or on the
-          cloud are our core competencies. From here on, our data scientists and
-          SMEs work hand-in-hand to develop algorithms and deep learning models
-          to help clients make sound decisions in both green and brown
-          facilities development and operations. Consurv has also embarked on
-          Edge Computing, a powerful tool to process Big Data at the site.
-        </p>
       </div>
 
       <RealTimeData />

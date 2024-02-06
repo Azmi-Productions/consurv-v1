@@ -44,7 +44,7 @@ const keyFeature = [
 const DataAnalytics = () => {
   return (
     <main className="py-32 px-10 md:px-24 lg:px-40 bg-white">
-      <header className="flex flex-col items-start justify-center">
+      <header className="flex flex-col items-center justify-center">
         <h1 className="text-zinc-900 text-5xl font-bold">Data Analytics</h1>
         <p className="text-gray-800 text-2xl text-center">
           We provide Data Wrangling, Data Extraction, Data Transformation and

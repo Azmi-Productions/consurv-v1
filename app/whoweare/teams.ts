@@ -1,8 +1,7 @@
 import FAIZ from "@/public/whoweare/faiz-hussin.jpg";
 import ASSARI from "@/public/whoweare/assari.jpg";
-import KAMARULZAMAN from "@/public/whoweare/kamarulzaman.jpg";
-import FUAD from "@/public/whoweare/mohd-fuad.jpg";
-import AQILAH from "@/public/whoweare/aqeelah-rashidi.jpg";
+import FUAD from "@/public/whoweare/Mohd Fuad.png";
+import AQILAH from "@/public/whoweare/Aqeelah Rashidi.png";
 
 export const teams = [
   {
