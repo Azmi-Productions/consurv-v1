@@ -33,7 +33,7 @@ const Services = () => {
     <section className="w-full h-fit bg-white flex flex-col items-center justify-center py-24">
       <header className="flex flex-col items-center justify-center drop-shadow-md px-10">
         <h1 className="text-zinc-800 text-2xl sm:text-5xl font-bold">
-          OUR SERVICES
+          Our Services
         </h1>
         <p className="text-zinc-500 text-center text-sm sm:text-xl">
           Have ideas but don&apos;t know how to make it happen? We help
