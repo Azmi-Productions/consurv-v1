@@ -26,20 +26,10 @@ const Page = () => {
           supplies to a multitude of industries with a special focus in Oil &
           Gas.
           <br />
-          Consurv specializes in Radio Frequency iDentification (RFiD)
-          solutions, providing clients with state of the art technology in
-          meeting their needs in asset and people tracking.
-          <br />
-          Consurv is a Systems Integrator (SI), providing the required platform
-          for a diverse set of systems to integrate and perform optimally. The
-          company is also an approved distributor for a range of IT products,
-          both in hardware and software.
-          <br />
-          Consurv is further specialised in Web-based solution covers but not
-          limited to Content Management System, Web Portal Solutions,
-          E-Commerce, Online Tools with customized solutions. We are not only
-          focused on programming but the solution we create were considered by
-          management’s view as well​​.
+          The 4 pillars of our business are Big Data, Digital Solutions, System
+          Integration and Procurement. Our successful track record has gained
+          the trust of clients such as PETRONAS, ExxonMobil, Shell, TNB and many
+          more.
         </p>
       </header>
 
