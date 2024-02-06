@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import IMAGE1 from "@/public/services/b87f6aa6-7b2b-45b0-ae77-f7eeaca729b3.jpeg";
-import IMAGE2 from "@/public/services/Consurv Banner.png";
+import IMAGE2 from "@/public/services/WhatsApp Image 2024-02-06 at 2.41.53 PM.jpeg";
 import IMAGE3 from "@/public/services/system-integration.jpeg";
 
 const services = [
