@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import IMAGE1 from "@/public/services/1.jpg";
+import IMAGE1 from "@/public/services/b87f6aa6-7b2b-45b0-ae77-f7eeaca729b3.jpeg";
 import IMAGE2 from "@/public/services/digital_solution.webp";
 import IMAGE3 from "@/public/services/system-integration.jpeg";
 
@@ -44,10 +44,10 @@ const Services = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-start w-full my-4 bg-zinc-100 rounded-md shadow-md cursor-pointer hover:shadow-xl transition-all duration-300"
+            className="flex flex-col items-center justify-start w-full my-4 bg-zinc-100 rounded-md shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition-all duration-300"
             onClick={() => router.push(service.link)}
           >
-            <div className="flex-1">
+            <div className="flex-1 overflow-hidden w-full">
               <Image
                 src={service.image}
                 alt={service.name}
