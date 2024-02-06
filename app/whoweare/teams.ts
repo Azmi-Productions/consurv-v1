@@ -21,7 +21,7 @@ export const teams = [
   },
   {
     name: "Mohd Fuad",
-    position: "IT Manager",
+    position: "Director",
     desc: "Coming from a full stack developer background, well verse with multiple programming language, system design and architecture, and with years of experience in Oil and Gas industry, Fuad has developed a thorough understanding in Process Engineering and Business Flow, bringing in the bridge between Engineering and System within the company.",
     image: FUAD,
     link: "https://www.linkedin.com/in/mohd-fuad-8262b753/",

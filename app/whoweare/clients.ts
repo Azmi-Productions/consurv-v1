@@ -39,7 +39,7 @@ export const clients = [
   "https://seeklogo.com/images/S/sime-darby-logo-DA85D99D2A-seeklogo.com.png",
   "https://1.bp.blogspot.com/-ZF2MqoyfYss/Uy27y2FqBgI/AAAAAAAAAIM/HLeUO3uNLgM/s1600/Talisman%5B1%5D.png",
   "https://scontent.fkul15-1.fna.fbcdn.net/v/t39.30808-6/368622080_1495777901188927_3264393861103252699_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=6nKKzDTUaKEAX_ixIVl&_nc_oc=AQln17gxOpDWZFu9ad51pVQNBKUEM70zbbHCCEz5RCnUNkTjf064n_yQ0fX0POb4IgA&_nc_ht=scontent.fkul15-1.fna&oh=00_AfDdWos9-qp-GIKyav5eXbkt1gtL9V6umuUVyLT0jCVwUA&oe=659AD978",
-  "https://storage.pitchin.my/companylogo/1673760092_5787_2563_comp_logo_img.png?sv=2020-04-08&si=ReadOnly&sr=b&sig=MtWaCRR6qUonAsIA%2BmnaS888Vpp5U%2F9dfYOiLvOIlt8%3D",
+  "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/bd/ac/ee/bdaceeeb-8aa5-e6f7-f595-dce4882a6706/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/256x256bb.jpg",
   "https://terataimaya.com/wp-content/uploads/2020/04/cropped-cropped-ico.png",
   "https://upload.wikimedia.org/wikipedia/commons/5/50/UTP-logo.png",
   "https://www.wakomas.com.my/wp-content/uploads/2023/08/wakomas-logo-footer-v2.png",
