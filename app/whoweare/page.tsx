@@ -43,7 +43,7 @@ const Page = () => {
             key={index}
             className="flex flex-col md:flex-row items-center justify-center"
           >
-            <div className="flex flex-col items-center justify-center w-[400px]">
+            <div className="flex flex-col items-center justify-center w-[400px] grayscale">
               <Image
                 src={team.image}
                 alt={team.name}
