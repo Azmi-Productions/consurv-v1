@@ -1,4 +1,10 @@
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaLinkedin,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 const navigation = {
   main: [
@@ -30,13 +36,18 @@ const navigation = {
       href: "https://www.linkedin.com/company/consurv-technic-sdn-bhd",
       icon: (props: any) => <FaLinkedin {...props} />,
     },
+    {
+      name: "Whatsapp",
+      href: "https://wa.me/+60342564254",
+      icon: (props: any) => <FaWhatsapp {...props} />,
+    },
   ],
 };
 
 export default function Footer() {
   return (
     <footer className="bg-zinc-800">
-      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-10 lg:px-8">
         <div className="mt-10 flex justify-center space-x-10">
           {navigation.social.map((item) => (
             <a
