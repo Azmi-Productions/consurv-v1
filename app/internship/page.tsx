@@ -6,20 +6,20 @@ const Page = () => {
     <main className="py-48 px-10 md:px-24 lg:px-40 bg-white">
       <header className="flex flex-col md:flex-row items-center justify-between gap-10 lg:px-40 mb-24">
         <div className="flex flex-col items-center justify-center gap-5">
-          <h1 className="text-zinc-800 text-xl">Internships</h1>
+          <h1 className="text-zinc-800 text-5xl font-bold">Internships</h1>
           <div className="flex flex-row items-center justify-center gap-2">
             <div className="w-1 h-1 bg-blue-700 rounded-full"></div>
             <div className="w-1 h-1 bg-blue-700 rounded-full"></div>
             <div className="w-1 h-1 bg-blue-700 rounded-full"></div>
             <div className="w-10 h-1 bg-blue-700 rounded-full"></div>
           </div>
-        </div>
-        <div>
-          <p className="text-zinc-800 text-center">
-            We are accepting interns from Universities all around the World.
-            From Business Information System, Information and Technology,
-            Accountancy and Human Resources.
-          </p>
+          <div>
+            <p className="text-zinc-800 text-center">
+              We are accepting interns from Universities all around the World.
+              From Business Information System, Information and Technology,
+              Accountancy and Human Resources.
+            </p>
+          </div>
         </div>
       </header>
 

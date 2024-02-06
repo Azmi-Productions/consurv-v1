@@ -7,11 +7,11 @@ const Page = () => {
   return (
     <main className="py-32 px-10 md:px-24 lg:px-40 bg-white">
       <header className="flex items-center justify-center">
-        <h1 className="text-zinc-800 text-5xl">Join Us</h1>
+        <h1 className="text-zinc-800 text-5xl font-bold">Join Us</h1>
       </header>
 
       <div className="flex flex-col items-center justify-center my-24 gap-5">
-        <h1 className="text-zinc-800 text-2xl">
+        <h1 className="text-zinc-500 text-2xl">
           We are just a bunch of fun people working in a fun company!
         </h1>
         <div className="flex flex-row items-center justify-center gap-2">

@@ -4,15 +4,7 @@ const Page = () => {
   return (
     <main className="py-32 px-10 md:px-24 lg:px-40 bg-white">
       <header className="flex flex-col items-center justify-center gap-10 px-0 lg:px-40 mb-24">
-        <h1 className="text-zinc-800 text-5xl">Career</h1>
-
-        <p className="text-zinc-800 font-bold text-xl italic">
-          In an aspiring and nurturing environment, Consurv Technic is the best
-          place to discover and develop your potential. Highly energetic, driven
-          with passion for success and results-oriented candidates, come join us
-          for a knowledge-filled career journey and be part of Consurv Technic’s
-          Winning Team!
-        </p>
+        <h1 className="text-zinc-800 text-5xl font-bold">Career</h1>
       </header>
 
       <div className="flex flex-col gap-10">
