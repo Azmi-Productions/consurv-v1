@@ -45,7 +45,7 @@ const RealTimeData = () => {
         </p>
       </div>
 
-      <div className="mt-24">
+      {/* <div className="mt-24">
         <div className="flex flex-col items-start justify-center">
           <h1 className="text-3xl font-bold text-zinc-800 underline mb-2">
             Unique Value
@@ -73,7 +73,7 @@ const RealTimeData = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 };
