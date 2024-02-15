@@ -12,7 +12,7 @@ const keyFeature = [
 
 const SystemDev = () => {
   return (
-    <main className="py-32 px-10 md:px-24 lg:px-40 bg-white">
+    <main className="py-32 bg-white">
       <header className="flex flex-col items-start justify-center">
         <h1 className="text-zinc-900 text-5xl font-bold">System Development</h1>
         <p className="text-gray-800 text-2xl text-left">

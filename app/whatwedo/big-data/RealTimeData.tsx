@@ -24,7 +24,7 @@ const keyFeature = [
 
 const RealTimeData = () => {
   return (
-    <main className="py-32 px-10 md:px-24 lg:px-40 bg-white">
+    <main className="py-32 bg-white">
       <header className="flex flex-col items-center justify-center">
         <h1 className="text-zinc-900 text-5xl font-bold text-center">
           Real Time Data
