@@ -50,30 +50,13 @@ const Page = () => {
         </p>
       </header>
 
-      <div className="flex flex-row items-center justify-center mt-10">
-        {/* <Image
-          src={RIGHTIMAGE}
-          alt="Right Image"
-          unoptimized
-          className="object-contain rounded-md w-[150px] h-[150px] md:w-[500px] md:h-[500px]"
-        />
-        <Image
-          src={LEFTIMAGE}
-          alt="Left Image"
-          unoptimized
-          className="object-contain rounded-md w-[150px] h-[150px] md:w-[500px] md:h-[500px]"
-        /> */}
+      <div className="flex flex-row w-full items-center justify-center mt-10">
         <Image
           src={SIIMAGE}
           alt="Big Data"
-          className="object-contain rounded-md"
+          className="w-full object-contain rounded-md"
         />
       </div>
-
-      {/* <DMPortal />
-      <ESMART />
-      <PrimeAssetEngin />
-      <ATLASDataInteg /> */}
 
       <div className="mt-24">
         <Accordion selectionMode="multiple">
@@ -84,7 +67,11 @@ const Page = () => {
               title={accordion.title}
               className="bg-white px-5 w-full border-b-2 border-solid border-blue-700 drop-shadow-2xl mb-1"
             >
-              <div className="flex flex-col sm:flex-row items-center justify-center w-full gap-5">
+              <div
+                className={`flex flex-col items-center justify-center w-full gap-5 ${
+                  index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
+                }`}
+              >
                 {accordion.image && (
                   <div className="h-[300px] w-full sm:w-[50%]">
                     <Image

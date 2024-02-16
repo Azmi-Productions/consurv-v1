@@ -9,7 +9,6 @@ const Page = () => {
           <div className="flex flex-col gap-y-3">
             <h1 className="text-4xl font-bold text-gray-600">{item.title}</h1>
             <p className="text-gray-500">{item.desc1}</p>
-            <p className="text-gray-500">{item.desc2}</p>
           </div>
           <div className="bg-zinc-800 h-1 w-full my-10" />
         </Fragment>

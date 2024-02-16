@@ -63,7 +63,7 @@ const Page = () => {
         </p>
       </header>
 
-      <div className="flex flex-row items-center justify-center mt-10">
+      <div className="flex flex-row items-center justify-center mt-10 w-full">
         {/* <Image
           src={RIGHTIMAGE}
           alt="Right Image"
@@ -79,7 +79,7 @@ const Page = () => {
         <Image
           src={DSIMAGE}
           alt="Big Data"
-          className="object-contain rounded-md"
+          className="object-contain rounded-md w-full"
         />
       </div>
 
