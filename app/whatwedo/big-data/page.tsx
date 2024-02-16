@@ -5,6 +5,7 @@ import CDETIMAGE from "@/public/big-data/BD- CDET.png";
 import USDPIMAGE from "@/public/big-data/BD - USDP2 (2).jpg";
 import CMIMAGE from "@/public/big-data/BD - Chemical Monitoring 2.png";
 import CPMIMAGE from "@/public/big-data/BD- Compressor Predictive Maintenance (cluster).png";
+import Header from "@/components/header";
 
 const accordions = [
   {
@@ -36,23 +37,10 @@ const accordions = [
 const Page = () => {
   return (
     <main className="py-32 px-10 md:px-24 lg:px-40 bg-white">
-      <header className="flex flex-col items-center justify-center gap-10">
-        <h1 className="text-zinc-800 text-5xl font-bold">Big Data</h1>
-        <p className="text-gray-500 text-2xl text-center">
-          In the realm of Big Data, crafting robust enterprise data architecture
-          is key. With expertise honed through collaborations with industry
-          giants like SHELL, PETRONAS (RAPID), and multinationals such as IBM,
-          Lenovo, and Intel, we specialize in blueprinting and implementing data
-          architecture roadmaps. Consurv excels in extracting and cleansing vast
-          datasets, leveraging technologies like Hadoop and partnering with
-          industry-leading Data Warehouses. Our Data Scientists and Subject
-          Matter Experts (SMEs) develop cutting-edge algorithms for predictive
-          maintenance, supply-chain optimization, and gas production
-          enhancement. With a track record of managing Petabytes of data, we
-          transform raw data into actionable insights, driving innovation and
-          efficiency.
-        </p>
-      </header>
+      <Header
+        title="Big Data"
+        desc="In the realm of Big Data, crafting robust enterprise data architecture is key. With expertise honed through collaborations with industry giants like SHELL, PETRONAS (RAPID), and multinationals such as IBM, Lenovo, and Intel, we specialize in blueprinting and implementing data architecture roadmaps. Consurv excels in extracting and cleansing vast datasets, leveraging technologies like Hadoop and partnering with industry-leading Data Warehouses. Our Data Scientists and Subject Matter Experts (SMEs) develop cutting-edge algorithms for predictive maintenance, supply-chain optimization, and gas production enhancement. With a track record of managing Petabytes of data, we transform raw data into actionable insights, driving innovation and efficiency."
+      />
 
       <div className="flex flex-row items-center justify-center mt-10 w-full">
         <Image

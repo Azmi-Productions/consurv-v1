@@ -5,6 +5,7 @@ import ECG from "@/public/digital-solutions/DS - ECG.jpg";
 import DS from "@/public/digital-solutions/DS - Digital Stations.png";
 import DRILLING from "@/public/digital-solutions/DS - Drilling Simulation.jpg";
 import PLS from "@/public/digital-solutions/DS - Private LTE Solutions.png";
+import Header from "@/components/header";
 
 const accordions = [
   {
@@ -41,10 +42,9 @@ const accordions = [
 const Page = () => {
   return (
     <main className="py-32 px-10 md:px-24 lg:px-40 bg-white">
-      <header className="flex flex-col items-center justify-center gap-10">
-        <h1 className="text-zinc-800 text-5xl font-bold">Digital Solutions</h1>
-        <p className="text-gray-500 text-2xl text-center">
-          Digital Solutions, including RFID systems, ECG monitoring, drilling
+      <Header
+        title="Digital Solutions"
+        desc="Digital Solutions, including RFID systems, ECG monitoring, drilling
           simulation, and Digital Stations, redefine operations across
           industries. Our RFID solutions revolutionize access control and
           inventory management, while ECG monitoring enhances offshore
@@ -56,23 +56,10 @@ const Page = () => {
           offerings, and provide real-time alerts for security and facility
           monitoring. With Consurv's comprehensive Digital Solutions suite,
           clients experience heightened efficiency, safety, and profitability
-          throughout their operations.
-        </p>
-      </header>
+          throughout their operations."
+      />
 
       <div className="flex flex-row items-center justify-center mt-10 w-full">
-        {/* <Image
-          src={RIGHTIMAGE}
-          alt="Right Image"
-          unoptimized
-          className="object-contain rounded-md w-[150px] h-[150px] md:w-[500px] md:h-[500px]"
-        />
-        <Image
-          src={LEFTIMAGE}
-          alt="Left Image"
-          unoptimized
-          className="object-contain rounded-md w-[150px] h-[150px] md:w-[500px] md:h-[500px]"
-        /> */}
         <Image
           src={DSIMAGE}
           alt="Big Data"

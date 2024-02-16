@@ -4,6 +4,7 @@ import SIIMAGE from "@/public/system-integrations/System Integrations.png";
 import ADI from "@/public/system-integrations/SI - Atlas Data Integration.png";
 import PRIME from "@/public/system-integrations/SI - PRIME.png";
 import DMPORTAL from "@/public/system-integrations/SI -DM Portal.png";
+import Header from "@/components/header";
 
 const accordions = [
   {
@@ -29,23 +30,10 @@ const accordions = [
 const Page = () => {
   return (
     <main className="py-32 px-10 md:px-24 lg:px-40 bg-white">
-      <header className="flex flex-col items-center justify-center gap-10">
-        <h1 className="text-zinc-800 text-5xl font-bold">System Integration</h1>
-        <p className="text-gray-500 text-2xl text-center">
-          The System Integrations portfolio encompasses three innovative
-          projects. Atlas Data Integration revolutionizes supply chains by
-          automating data generation and ensuring cybersecurity compliance,
-          facilitating seamless reporting and data transformation for enhanced
-          accuracy and usability across platforms like SAP. PRIME Asset
-          Engineering enhances maintenance with interactive dashboards and
-          seamless data integration, empowering real-time insights and informed
-          decision-making. Meanwhile, DM Portal centralizes deferment data
-          submission for PAC Contractors, providing actionable insights and
-          fostering collaboration through secure authentication and third-party
-          data consumption. Together, these projects optimize operations, drive
-          efficiency, and strengthen data management across the supply chain.
-        </p>
-      </header>
+      <Header
+        title="System Integration"
+        desc="The System Integrations portfolio encompasses three innovative projects. Atlas Data Integration revolutionizes supply chains by automating data generation and ensuring cybersecurity compliance, facilitating seamless reporting and data transformation for enhanced accuracy and usability across platforms like SAP. PRIME Asset Engineering enhances maintenance with interactive dashboards and seamless data integration, empowering real-time insights and informed decision-making. Meanwhile, DM Portal centralizes deferment data submission for PAC Contractors, providing actionable insights and fostering collaboration through secure authentication and third-party data consumption. Together, these projects optimize operations, drive efficiency, and strengthen data management across the supply chain."
+      />
 
       <div className="flex flex-row w-full items-center justify-center mt-10">
         <Image
