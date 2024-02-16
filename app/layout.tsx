@@ -15,6 +15,18 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "CONSURV TECHNIC",
   description: "22/23",
+  keywords: [
+    "consurv",
+    "consurv technic",
+    "consurv tech",
+    "consurv technology",
+    "consurv innovation",
+    "CONSULTANCY",
+    "SURVEYING",
+    "TECHNOLOGY",
+    "INNOVATION",
+    "INTEGRATION",
+  ],
 };
 
 export default function RootLayout({

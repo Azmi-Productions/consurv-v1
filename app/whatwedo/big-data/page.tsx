@@ -1,10 +1,8 @@
-"use client";
-
 import Image from "next/image";
 import NEWIMAGE from "@/public/big-data/Big Data.png";
-import { Accordion, AccordionItem } from "@nextui-org/react";
+import Accordion from "@/components/accordions";
 import CDETIMAGE from "@/public/big-data/BD- CDET.png";
-import USDPIMAGE from "@/public/big-data/BD - USDP2.png";
+import USDPIMAGE from "@/public/big-data/BD - USDP2 (2).jpg";
 import CMIMAGE from "@/public/big-data/BD - Chemical Monitoring 2.png";
 import CPMIMAGE from "@/public/big-data/BD- Compressor Predictive Maintenance (cluster).png";
 
@@ -41,9 +39,6 @@ const Page = () => {
       <header className="flex flex-col items-center justify-center gap-10">
         <h1 className="text-zinc-800 text-5xl font-bold">Big Data</h1>
         <p className="text-gray-500 text-2xl text-center">
-          {/* With the advance of computing prowess, the ability to crunch large
-          amounts of data has proven to be beneficial to us in many aspects,
-          throughout all industries. */}
           In the realm of Big Data, crafting robust enterprise data architecture
           is key. With expertise honed through collaborations with industry
           giants like SHELL, PETRONAS (RAPID), and multinationals such as IBM,
@@ -60,18 +55,6 @@ const Page = () => {
       </header>
 
       <div className="flex flex-row items-center justify-center mt-10 w-full">
-        {/* <Image
-          src={RIGHTIMAGE}
-          alt="Right Image"
-          unoptimized
-          className="object-contain rounded-md w-[150px] h-[150px] md:w-[500px] md:h-[500px]"
-        />
-        <Image
-          src={LEFTIMAGE}
-          alt="Left Image"
-          unoptimized
-          className="object-contain rounded-md w-[150px] h-[150px] md:w-[500px] md:h-[500px]"
-        /> */}
         <Image
           src={NEWIMAGE}
           alt="Big Data"
@@ -79,40 +62,7 @@ const Page = () => {
         />
       </div>
 
-      {/* <CDET />
-      <USDP /> */}
-      {/* <RealTimeData /> */}
-      {/* <DataAnalytics /> */}
-
-      <div className="mt-24">
-        <Accordion selectionMode="multiple">
-          {accordions.map((accordion, index) => (
-            <AccordionItem
-              key={index}
-              aria-label="Accordions"
-              title={accordion.title}
-              className="bg-white px-5 w-full border-b-2 border-solid border-blue-700 drop-shadow-2xl mb-1"
-            >
-              <div
-                className={`flex flex-col items-center justify-center w-full gap-5 ${
-                  index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
-                }`}
-              >
-                {accordion.image && (
-                  <div className="h-[300px] w-full sm:w-[50%]">
-                    <Image
-                      src={accordion.image as unknown as string}
-                      alt={accordion.title}
-                      className="object-contain rounded-md"
-                    />
-                  </div>
-                )}
-                <p className="text-zinc-800 flex-1">{accordion.content}</p>
-              </div>
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </div>
+      <Accordion accordions={accordions} />
     </main>
   );
 };

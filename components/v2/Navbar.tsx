@@ -8,12 +8,12 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link,
 } from "@nextui-org/react";
 import { Dialog } from "@headlessui/react";
 import { AiOutlineClose as XMarkIcon } from "react-icons/ai";
 import { FaBars as Bars3Icon } from "react-icons/fa";
 import FlyoutMenu from "../FlyoutMenu";
+import Link from "next/link";
 
 const whatwedo = [
   {
@@ -29,8 +29,8 @@ const whatwedo = [
     href: "/whatwedo/system-integration",
   },
   {
-    name: "Outsourcing",
-    href: "/whatwedo/outsourcing",
+    name: "Procurement",
+    href: "/whatwedo/procurement",
   },
 ];
 

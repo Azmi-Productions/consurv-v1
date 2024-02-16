@@ -1,9 +1,6 @@
-"use client";
-
 import Image from "next/image";
 import DSIMAGE from "@/public/digital-solutions/Digital Solutions.png";
-// import { accordions } from "./accordions";
-import { Accordion, AccordionItem } from "@nextui-org/react";
+import Accordion from "@/components/accordions";
 import ECG from "@/public/digital-solutions/DS - ECG.jpg";
 import DS from "@/public/digital-solutions/DS - Digital Stations.png";
 import DRILLING from "@/public/digital-solutions/DS - Drilling Simulation.jpg";
@@ -83,35 +80,7 @@ const Page = () => {
         />
       </div>
 
-      <div className="mt-24">
-        <Accordion selectionMode="multiple">
-          {accordions.map((accordion, index) => (
-            <AccordionItem
-              key={index}
-              aria-label="Accordions"
-              title={accordion.title}
-              className="bg-white px-5 w-full border-b-2 border-solid border-blue-700 drop-shadow-2xl mb-1"
-            >
-              <div
-                className={`flex flex-col items-center justify-center w-full gap-5 ${
-                  index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
-                }`}
-              >
-                {accordion.image && (
-                  <div className="h-[300px] w-full sm:w-[50%]">
-                    <Image
-                      src={accordion.image as unknown as string}
-                      alt={accordion.title}
-                      className="object-contain rounded-md"
-                    />
-                  </div>
-                )}
-                <p className="text-zinc-800 flex-1">{accordion.content}</p>
-              </div>
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </div>
+      <Accordion accordions={accordions} />
     </main>
   );
 };
