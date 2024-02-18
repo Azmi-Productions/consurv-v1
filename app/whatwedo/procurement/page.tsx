@@ -7,18 +7,18 @@ const Page = () => {
       <header className="flex flex-col items-center justify-center gap-10">
         <h1 className="text-zinc-800 text-5xl font-bold">Procurement</h1>
         <p className="text-gray-500 text-2xl text-center">
-          "End-to-End" signifies a holistic approach from project initiation to
-          completion, encompassing all crucial stages and elements. For
-          instance, in software development, it involves planning, design,
-          development, testing, deployment, and maintenance. "Subcontract
-          Specific Scope" involves outsourcing a particular project aspect to a
-          specialized third-party subcontractor. "Attachment of Resources
-          (Manpower Supply) - At Site or Remote" refers to deploying manpower
-          either physically at the project site or remotely, depending on task
-          requirements. This ensures tasks are efficiently executed, leveraging
-          expertise where needed. Overall, these practices optimize project
-          management, ensuring comprehensive coverage and effective resource
-          utilization.
+          &quot;End-to-End&quot; signifies a holistic approach from project
+          initiation to completion, encompassing all crucial stages and
+          elements. For instance, in software development, it involves planning,
+          design, development, testing, deployment, and maintenance.
+          "Subcontract Specific Scope" involves outsourcing a particular project
+          aspect to a specialized third-party subcontractor. "Attachment of
+          Resources (Manpower Supply) - At Site or Remote" refers to deploying
+          manpower either physically at the project site or remotely, depending
+          on task requirements. This ensures tasks are efficiently executed,
+          leveraging expertise where needed. Overall, these practices optimize
+          project management, ensuring comprehensive coverage and effective
+          resource utilization.
         </p>
       </header>
 
